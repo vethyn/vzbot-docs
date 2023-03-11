@@ -62,8 +62,8 @@
           <li class="nav-item"><a class="nav-link active" href="#vzbot_start">0. Getting started</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#vzbot_about">0.1 About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_print_settings">0.2 Print settings</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_parts">0.3 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_parts">0.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_print_settings">0.3 Print settings</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_frame">1. Frame</a>
@@ -77,10 +77,31 @@
               <li class="nav-item"><a class="nav-link" href="#vzbot_frame_checks">1.7 Frame Checks</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly">2. Z - Assembly</a>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly">2. Z - Assembly - Part 1</a>
             <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_overview">Overview</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_parts">Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_overview">2.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_parts">2.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_bracket">2.3 Lower bracket</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_leadscrew_mount">2.4 Lower leadscrew mount</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_leadscrew_top_mount">2.5 Lower leadscrew top mount</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly">3. Bed - Assembly</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_overview">3.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_parts">3.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_lower_bracket">3.3 Mount bearings and attach</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_lower_leadscrew_mount">3.4 Mount bed plate</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_lower_leadscrew_top_mount">3.5 Top rod mounts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly">4. Z - Assembly - Part 2</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_overview">4.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_parts">4.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_lower_bracket">4.3 Top rod mounts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_lower_leadscrew_mount">4.4 Single z motor</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_lower_leadscrew_mount">4.5 Z-Switch & bed chain</a></li>
             </ul>
           </li>
 
@@ -137,9 +158,39 @@
           </section>
 
           <hr class="divider">
+
+          <section id="vzbot_parts">
+            <h2>0.2 Parts</h2>
+            <br><br>
+            <h3>List of needed Parts</h3>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Source 1</th>
+                    <th>Source 2</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020 Extrusion xxx mm</td>
+                    <td>2</td>
+                    <td><a href="www.google.de">Source1</a></td>
+                    <td><a href="www.google.de">Source2</a></td>
+                    <td>Need to be tapped and drilled holes on x/y with z/i</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <hr class="divider">
           
           <section id="vzbot_print_settings">
-            <h2>0.2 Print settings</h2>
+            <h2>0.3 Print settings</h2>
             We recommend printing all parts in ABS, ASA or similar material to be able to withstand the high heat environment in the printer enclosure.
             <br>
             Print settings should always be tuned for your own material and tested for decent strength and layer adhesion.
@@ -195,45 +246,12 @@
             </div>
           </section>
 
-          <hr class="divider">
-
-          <section id="vzbot_parts">
-            <h2>0.3 Parts</h2>
-            <br><br>
-            <h3>List of needed Parts</h3>
-            <div class="table-responsive">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Material</th>
-                    <th>Quantity</th>
-                    <th>Source 1</th>
-                    <th>Source 2</th>
-                    <th>Note</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2020 Extrusion xxx mm</td>
-                    <td>2</td>
-                    <td><a href="www.google.de">Source1</a></td>
-                    <td><a href="www.google.de">Source2</a></td>
-                    <td>Need to be tapped and drilled holes on x/y with z/i</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
         </div>
 
         <div class="container">
           <section id="vzbot_frame">
-            <h3>1. Frame</h3>
-            As a first step we will assemble our Frame and work our way further after this, this is a crucial
-            step make sure to square the frame as much as possible.
+            <h2>1. Frame</h2>
           </section>
-
-          <hr class="divider">
 
           <section id="vzbot_frame_overview">
             <h3>1.1 Overview</h3>
@@ -244,14 +262,17 @@
             </p>
             The frame is assembled through a combination of blind joints, corner brackets and blind corner brackets. The corner brackets are to help stiffen up the frame and are optional, though we highly recommend using them on every possible corner for best results.
             <br><br>
-            <h4>How to assemble a blind corner joint</h4>
+            <hr class="devider">
+            <h4>1.1.1 How to assemble a blind corner joint</h4>
             <br>
             <p>
               <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/blind_joints.png">
                 <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/blind_joints.png" alt="">
               </a>
             </p>
-            <h4>Useful links about the assembly of blind joints</h4>            
+            <br><br>
+            <hr class="devider">
+            <h4>1.1.2 Useful links about the assembly of blind joints</h4>            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2dvbn0rWA60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ueniUWrUcjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </section>
@@ -541,14 +562,15 @@
           <div class="container" id="vzbot_z_assembly">
             <section id="vzbot_z_assembly">
               <h2>2. Z-Assembly</h2>
-              Next up on the list is building the Z Assembly of the vzbot including the bed.
             </section>
-            
-            <hr class="divider">
             
             <section id="vzbot_z_assembly_overview">
               <h2>2.1 Overview</h2>
-
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_overview.png">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_overview.png" alt="">
+                </a>
+              </p>
             </section>
 
             <hr class="divider">
@@ -556,8 +578,120 @@
             <section id="vzbot_z_assembly_parts">
               <h2>2.2 Parts</h2>
               <div class="table-responsive">
-                
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 12mm</td>
+                      <td>16</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 t-nut</td>
+                      <td>20</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>608-2RS bearings</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>10mm rods ( 300 mm )</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Belt GT2 closed ( 860 mm )</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Leadscrew TR8 ( 300 mm )</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 40 teeth ( 5 )</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 xxx</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Z assembly alignment tool</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </section>
+
+            <hr class="divider">
+            <section id="vzbot_z_assembly_lower_bracket">
+              <h3>2.3 Lower bracket</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 12mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 t-nut</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>608-2RS bearings</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>10mm rods ( 300 mm )</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Z assembly alignment tool</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              Mount the top bracket with the 12mm M4 hardware to the frame loosely. Then mount the sliding rods with 12mm M4 screws and align the assembly to the frame using the printed “Z assembly alignment tool”. 
+              Be sure to secure all hardware. Be sure to either insert 2 T-nuts underneath the center two holes for the top leadscrew bracket or immediately mount the top bracket.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket.png">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket.png" alt="">
+                </a>
+              </p>
             </section>
           </div>
 
