@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="../../../assets/images/favicon.png" rel="icon" />
+    <title>Documentation | VZBot 235</title>
+    <meta name="description" content="Build guide for VZBot 235 Alu version">
+    <meta name="author" content="harnishdesign.net">
+
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/highlight.js/styles/github.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/stylesheet.css" />
+  </head>
+  <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End --> 
+
+    <div id="main-wrapper"> 
+      <header id="header" class="sticky-top"> 
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+          <div class="container-fluid">
+            <!-- Sidebar Toggler -->
+            <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button">
+              <span></span>
+              <span class="w-75"></span>
+              <span class="w-50"></span>
+            </button>
+            <a class="logo ml-md-3" href="../../../index.html" title="VZBot 235 Alu"> 
+              <img src="../../../assets/images/logo.png" alt="VZBot" width="50" height="50"/> 
+            </a> 
+            <span class="text-2 ml-2">VZBot 235</span> 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+              <li class="social-icons-discord"><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+              <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-icons-github"><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="Github"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="content" role="main">
+
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#vzbot_start" onclick="window.open('../shared/getting_started.html', '_self')">0. Getting started</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_frame" onclick="window.open('../shared/frame.html', '_self')">1. Frame</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly" onclick="window.open('bed_assembly.html', '_self')">3. Bed - Assembly</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_2.html', '_self')">4. Z - Assembly - Part 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor">5. Front motor mounts</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor_overview">5.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor_parts">5.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor_prepare">5.3 Prepare parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor_frame">5.4 Attach to frame</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor_hinge">5.5 Attach hinges</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount_awd.html', '_self')">6. Rear motor mounts ( AWD )</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('gantry.html', '_self')">7. Gantry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('printhead.html', '_self')">8. Printhead</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1" onclick="window.open('../shared/getting_started.html', '_self')">9. Panels - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_fume" onclick="window.open('../shared/getting_started.html', '_self')">10. Fume extractor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_electronics" onclick="window.open('../shared/getting_started.html', '_self')">11. Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_firmware" onclick="window.open('../shared/getting_started.html', '_self')">12. Firmware</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_checks" onclick="window.open('../shared/getting_started.html', '_self')">13. Checks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_2" onclick="window.open('../shared/getting_started.html', '_self')">14. Panels - Part 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_trim_pieces" onclick="window.open('../shared/getting_started.html', '_self')">15. Trim pieces</a></li>
+        </ul>
+      </div>
+      
+      <div class="idocs-content">
+        <div class="container" id="vzbot_front_motor">   
+          <section id="vzbot_front_motor">
+            <h2>5. Front motor mounts</h2>
+          </section>
+          <section id="vzbot_front_motor_overview">
+            <h3>5.1 Overview</h3>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/detail.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/detail.png" alt="">
+              </a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_front_motor_parts">
+            <h3>5.2 Parts</h3>
+            <div class="responsive-table">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M3 6mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M3 10mm ( countersunk )</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M3 12mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M3 35mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 8mm ( countersunk )</td>
+                    <td>2</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 10mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 12mm</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 30mm ( set screw )</td>
+                    <td>2</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 40mm ( sockethead )</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 t-nut</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 nut</td>
+                    <td>10</td>
+                    <td>also for hinges</td>
+                  </tr>
+                  <tr>
+                    <td>M3 nut</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Washer ID 4mm</td>
+                    <td>2</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>NEMA 17</td>
+                    <td>2</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>GT2 20 teeth</td>
+                    <td>2</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>PRINT FILES!!!</td>
+                    <td>1</td>
+                    <td>TODO</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <hr class="divider">
+
+          <section id="vzbot_front_motor_prepare">
+            <h3>5.3 Prepare parts</h3>
+            <div class="responsive-table">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M3 6mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/block.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/block.png" alt="">
+              </a>
+            </p>
+            <br>
+            Insert the 4 M3 nuts and single M4 nut in the printed standoff motor anchor as shown above.
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/motor.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/motor.png" alt="">
+              </a>
+            </p>
+            <br>
+            Attach the stepper motor to the bottom motor plate with 2 6mm M3 screws.
+            <br>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_front_motor_frame">
+            <h3>5.4 Attache to frame</h3>
+            <div class="responsive-table">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M3 6mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            Screw the standoff in the middle plate using the 10mm countersunk M3 and attach it to the frame using one 12mm M4 and 
+            the 8mm countersunk M4. Lock the standoff in place using the 40mm M4 and the printed hammer nut that is installed 
+            during frame assembly.
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/mount_lower_part.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/mount_lower_part.png" alt="">
+              </a>
+            </p>
+            <br>
+            Attach the top plate using the 12mm M4 and T-nuts to the frame and screw in the 12mm M3 into the printed standoff.
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/mount_upper_part.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/mount_upper_part.png" alt="">
+              </a>
+            </p>
+            <br>
+            Insert the final standoffs and insert the 35mm M3, slide in the motor with its plate and tighten the M3 screws finger tight.
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/mount_standoffs.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/mount_standoffs.png" alt="">
+              </a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_front_motor_hinge">
+            <h3>5.4 Attach hinges</h3>
+            <div class="responsive-table">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M3 6mm</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            Screw in the M4 set screw into the bottom tensioner, the M4 nut should be pressed into the tensioning knob. The tensioner plate 
+            can be installed when the enclosure panels are on the printer.
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/front_motor_mounts/hinges.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/front_motor_mounts/hinges.png" alt="">
+              </a>
+            </p>
+
+            <br><br>
+            <b>Repeat <a href="#vzbot_front_motor_prepare">5.3</a> / 
+            <a href="#vzbot_front_motor_frame">5.4</a> / 
+            <a href="#vzbot_front_motor_hinge">5.5</a> for the other side of the printer</b>
+          </section>
+        </div>
+      </div>
+      <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+          <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+            <li><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p class="text-center">Copyright &copy; 2023 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">VZBot</a>. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+    <script src="../../../assets/vendor/jquery/jquery.min.js"></script> 
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="../../../assets/vendor/highlight.js/highlight.min.js"></script> 
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+    <script src="../../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="../../../assets/js/theme.js"></script>
+  </body>
+</html>
