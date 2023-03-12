@@ -61,52 +61,51 @@
         <ul class="nav flex-column ">
           <li class="nav-item"><a class="nav-link active" href="#vzbot_start" onclick="window.open('../shared/getting_started.html', '_self')">0. Getting started</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_frame" onclick="window.open('../shared/frame.html', '_self')">1. Frame</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly" onclick="window.open('bed_assembly.html', '_self')">3. Bed - Assembly</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_2.html', '_self')">4. Z - Assembly - Part 2</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor" onclick="window.open('front_motor_mount.html', '_self')">5. Front motor mounts</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_awd">6. Rear motor mounts ( AWD )</a>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount_awd.html', '_self')">6. Rear motor mounts ( AWD )</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('../alu/gantry.html', '_self')">7. Gantry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('../alu/printhead.html', '_self')">8. Printhead</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1">9. Panels - Part 1</a>
             <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_overview_awd">6.1 Overview</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_parts_awd">6.2 Parts</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_frame_awd">6.3 Attach to frame</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_idler_left_awd">6.4 Install movement parts left</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_idler_right_awd">6.5 Install movement parts right</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor_plate_awd">6.6 Attach top plate</a></li>
-            </ul>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1_overview">9.1 Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1_parts">9.2 Parts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1_back">9.3 Back panel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1_feet_prepare">9.4 Feet prepare</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1_bottom">9.5 Bottom panel</a></li>
+              </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('gantry.html', '_self')">7. Gantry</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('printhead.html', '_self')">8. Printhead</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1" onclick="window.open('../shared/panels_part_1.html', '_self')">9. Panels - Part 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_fume" onclick="window.open('../shared/getting_started.html', '_self')">10. Fume extractor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_fume" onclick="window.open('fume.html', '_self')">10. Fume extractor</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_electronics" onclick="window.open('../shared/getting_started.html', '_self')">11. Electronics</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_firmware" onclick="window.open('../shared/getting_started.html', '_self')">12. Firmware</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_checks" onclick="window.open('../shared/getting_started.html', '_self')">13. Checks</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_2" onclick="window.open('../shared/getting_started.html', '_self')">14. Panels - Part 2</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_trim_pieces" onclick="window.open('../shared/getting_started.html', '_self')">15. Trim pieces</a></li>
+
         </ul>
       </div>
       
       <div class="idocs-content">
-        <div class="container" id="vzbot_rear_motor_awd">   
-          <section id="vzbot_rear_motor_awd">
-            <h2>6. Rear motor mounts ( AWD )</h2>
+        <div class="container" id="vzbot_panels_part_1">   
+          <section id="vzbot_panels_part_1">
+            <h2>9. Panels - Part 1</h2>
           </section>
-
-          <section id="vzbot_rear_motor_overview">
-            <h3>6.1 Overview</h3>
+          <section id="vzbot_panels_part_1_overview">
+            <h3>9.1 Overview</h3>
             <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/back_motor_mounts/detail.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/back_motor_mounts/detail.png" alt="">
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/panels_part_1/overview.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/panels_part_1/overview.png" alt="">
               </a>
             </p>
           </section>
 
           <hr class="divider">
 
-          <section id="vzbot_rear_motor_parts_awd">
-            <h3>6.2 Parts</h3>
+          <section id="vzbot_panels_part_1_parts">
+            <h3>9.2 Parts</h3>
             <div class="responsive-table">
               <table class="table table-striped">
                 <thead>
@@ -129,8 +128,8 @@
 
           <hr class="divider">
 
-          <section id="vzbot_rear_motor_frame_awd">
-            <h3>6.3 Attach to frame</h3>
+          <section id="vzbot_panels_part_1_back">
+            <h3>9.3 Back panel</h3>
             <div class="responsive-table">
               <table class="table table-striped">
                 <thead>
@@ -149,20 +148,20 @@
                 </tbody>
               </table>
             </div>
-            Mount the motor to the bottom plate with the M3 screws. <br>
-            Mount the bottom assembly (left & right) to the frame with the rear extrusion.
+            Mount all hardware in the backpanel and put the panel on the frame. It is easiest to start tightening starting in the
+            middle of each side and work your way outwards to prevent the panel from bulging.
             <br><br>
             <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/back_motor_mounts/mount_lower_part.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/back_motor_mounts/mount_lower_part.png" alt="">
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/panels_part_1/back.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/panels_part_1/back.png" alt="">
               </a>
             </p>
           </section>
 
           <hr class="divider">
 
-          <section id="vzbot_rear_motor_idler_left_awd">
-            <h3>6.4 Install movement parts left</h3>
+          <section id="vzbot_panels_part_1_feet_prepare">
+            <h3>9.4 Feet prepare</h3>
             <div class="responsive-table">
               <table class="table table-striped">
                 <thead>
@@ -181,24 +180,19 @@
                 </tbody>
               </table>
             </div>
-            Mount the pulleys with their respective spacers and hardware like shown below. Mind that the bottom spacer for the toothed 
-            idler pulley has a smaller inside diameter then the top one for the smooth idler.
-            <br><br>
-            <i>* when getting the top plate in position with all hardware it is recommended to either have the printed parts printed with 
-            some excess first layer squish or put some thicker grease between the last spacer and the shoulder bolt to keep the 
-            assembly together before mounting.</i>
+            Insert all hardware in the printed feet and mount the rubber feet inside. When scaling the printed spacer make sure to get 
+            it to the height your rubber feet sticks out about 1-2mm out of the printed feet.
             <br><br>
             <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/back_motor_mounts/prepare.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/back_motor_mounts/prepare.png" alt="">
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/panels_part_1/feet.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/panels_part_1/feet.png" alt="">
               </a>
             </p>
           </section>
 
-          <hr class="divider">
 
-          <section id="vzbot_rear_motor_idler_right_awd">
-            <h3>6.5 Install movement parts right</h3>
+          <section id="vzbot_panels_part_1_bottom">
+            <h3>9.5 Bottom panel</h3>
             <div class="responsive-table">
               <table class="table table-striped">
                 <thead>
@@ -217,47 +211,11 @@
                 </tbody>
               </table>
             </div>
-            Mount the pulleys with their respective spacers and hardware like shown below. Mind that the bottom spacer for the toothed 
-            idler pulley has a smaller inside diameter then the top one for the smooth idler.
-            <br><br>
-            <i>* when getting the top plate in position with all hardware it is recommended to either have the printed parts printed with 
-            some excess first layer squish or put some thicker grease between the last spacer and the shoulder bolt to keep the 
-            assembly together before mounting.</i>
+            Mount the feet and all hardware to the bottom panel. Next up mount the bottom panel to the frame.
             <br><br>
             <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/back_motor_mounts/prepare.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/back_motor_mounts/prepare.png" alt="">
-              </a>
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <section id="vzbot_rear_motor_plate_awd">
-            <h3>6.6 Attach top plate</h3>
-            <div class="responsive-table">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Material</th>
-                    <th>Quantity</th>
-                    <th>Note</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>M3 6mm</td>
-                    <td>4</td>
-                    <td>-</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            Secure the top plate with the M4 screws to the frame.
-            <br><br>
-            <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/back_motor_mounts/mount_upper_part.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/back_motor_mounts/mount_upper_part.png" alt="">
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/panels_part_1/bottom.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/panels_part_1/bottom.png" alt="">
               </a>
             </p>
           </section>

@@ -61,50 +61,51 @@
         <ul class="nav flex-column ">
           <li class="nav-item"><a class="nav-link active" href="#vzbot_start" onclick="window.open('../shared/getting_started.html', '_self')">0. Getting started</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_frame" onclick="window.open('../shared/frame.html', '_self')">1. Frame</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly">3. Bed - Assembly</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_overview">3.1 Overview</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_parts">3.2 Parts</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_mount">3.3 Mount bearings and attach</a></li>
-              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_mount_plate">3.4 Mount bed plate</a></li>
-            </ul>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly" onclick="window.open('bed_assembly.html', '_self')">3. Bed - Assembly</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_2.html', '_self')">4. Z - Assembly - Part 2</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor" onclick="window.open('front_motor_mount.html', '_self')">5. Front motor mounts</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount_awd.html', '_self')">6. Rear motor mounts ( AWD )</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('gantry.html', '_self')">7. Gantry</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('printhead.html', '_self')">8. Printhead</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1" onclick="window.open('../shared/panels_part_1.html', '_self')">9. Panels - Part 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="#vzbot_fume" onclick="window.open('../shared/fume.html', '_self')">10. Fume extractor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('../alu/gantry.html', '_self')">7. Gantry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('../alu/printhead.html', '_self')">8. Printhead</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1" onclick="window.open('panels_part_1.html', '_self')">9. Panels - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_fume">10. Fume extractor</a>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#vzbot_fume_overview">9.1 Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_fume_parts">9.2 Parts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_fume_nuts">9.3 Nuts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_fume_fans">9.4 Fans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_fume_hepa">9.5 Hepa filter</a></li>
+              </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_electronics" onclick="window.open('../shared/getting_started.html', '_self')">11. Electronics</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_firmware" onclick="window.open('../shared/getting_started.html', '_self')">12. Firmware</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_checks" onclick="window.open('../shared/getting_started.html', '_self')">13. Checks</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_2" onclick="window.open('../shared/getting_started.html', '_self')">14. Panels - Part 2</a></li>
           <li class="nav-item"><a class="nav-link" href="#vzbot_trim_pieces" onclick="window.open('../shared/getting_started.html', '_self')">15. Trim pieces</a></li>
+
         </ul>
       </div>
       
       <div class="idocs-content">
-        <div class="container" id="vzbot_bed_assembly">
-          <section id="vzbot_bed_assembly">
-            <h2>3. Bed - Assembly</h2>
+        <div class="container" id="vzbot_fume">   
+          <section id="vzbot_fume">
+            <h2>10. Fume extractor</h2>
           </section>
-
-          <section id="vzbot_bed_assembly_overview">
-            <h3>3.1 Overview</h3>
+          <section id="vzbot_fume_overview">
+            <h3>10.1 Overview</h3>
             <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_overview.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_overview.png" alt="">
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/fume/overview.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/fume/overview.png" alt="">
               </a>
             </p>
           </section>
 
           <hr class="divider">
 
-          <section id="vzbot_bed_assembly_parts">
-            <h3>3.2 Parts</h3>
+          <section id="vzbot_fume_parts">
+            <h3>9.2 Parts</h3>
             <div class="responsive-table">
               <table class="table table-striped">
                 <thead>
@@ -116,94 +117,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>M4 8mm</td>
-                    <td>16</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>M3 8mm</td>
-                    <td>16</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>M3 nut</td>
+                    <td>M3 6mm</td>
                     <td>4</td>
                     <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>M3 50mm ( countersunk )</td>
-                    <td>4</td>
-                    <td>Countersunk for the bed</td>
-                  </tr>
-                  <tr>
-                    <td>LMK10LUU</td>
-                    <td>4</td>
-                    <td>If you want to use the bought version</td>
-                  </tr>
-                  <tr>
-                    <td>LM10LUU</td>
-                    <td>4</td>
-                    <td>Use this from the old bed and print 4 of this ( link )</td>
-                  </tr>
-                  <tr>
-                    <td>Oldham coupler</td>
-                    <td>2</td>
-                    <td>Optional but highly advised</td>
-                  </tr>
-                  <tr>
-                    <td>Leadscrew nut</td>
-                    <td>2</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>Bed level knobs</td>
-                    <td>4</td>
-                    <td>link</td>
-                  </tr>
-                  <tr>
-                    <td>Springs / Silicon dumper</td>
-                    <td>4</td>
-                    <td>link</td>
-                  </tr>
-                  <tr>
-                    <td>Oldham couplers ( printed )</td>
-                    <td>2</td>
-                    <td>optional / link</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </section>
-
-          <hr class="divider">
-
-          <section id="vzbot_bed_assembly_mount">
-            <h3>3.3 Mount bearings and attach</h3>
-            Mount the LMK10LUU using the M4 10mm hardware to the bed frame. Then mount the Oldham couplers with the leadscrew nuts together with M3 10mm and the M3 nut 
-            and mount that assembly to the bed frame using M3 hardware.<br>
-            Afterwards place the bed assembly in the rods and the leadscrew.
-            <br><br><br>
-            <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_mount.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_mount.png" alt="">
-              </a>
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <section id="vzbot_bed_assembly_mount_plate">
-            <h3>3.4 Mount bed plate</h3>
-            Mount the bed plate to the bed frame using the 50mm countersunk M3 screws, put a Spring or a silicon dumper on each corner of the bed before
-            attaching the screw and the bed level knob to it. Then give every knob a small "torque" so you can later level your bed propperly.
-            When using a cast aluminum bed make sure it is well prepped before mounting. It is recommended to always be safe and inform yourself properly 
-            on how to apply a AC silicon heating pad.
-            <br><br><br>
-            <p>
-              <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_plate.png">
-                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_plate.png" alt="">
-              </a>
-            </p>
           </section>
         </div>
       </div>
