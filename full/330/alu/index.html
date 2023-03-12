@@ -1,1433 +1,1259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<link href="assets/images/favicon.png" rel="icon" />
-<title>Documentation | Your ThemeForest item Name</title>
-<meta name="description" content="Your ThemeForest item Name and description">
-<meta name="author" content="harnishdesign.net">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="../../../assets/images/favicon.png" rel="icon" />
+    <title>Documentation | VZBot 235</title>
+    <meta name="description" content="Build guide for VZBot 235 Alu version">
+    <meta name="author" content="harnishdesign.net">
 
-<!-- Stylesheet
-============================== -->
-<!-- Bootstrap -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-<!-- Font Awesome Icon -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-<!-- Magnific Popup -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-<!-- Highlight Syntax -->
-<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-<!-- Custom Stylesheet -->
-<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/highlight.js/styles/github.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/stylesheet.css" />
+  </head>
+  <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
 
-<body class="box" data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End --> 
 
-<!-- Preloader -->
-<div class="preloader">
-  <div class="lds-ellipsis">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
-<!-- Preloader End --> 
+    <div id="main-wrapper"> 
+      <header id="header" class="sticky-top"> 
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+          <div class="container-fluid">
+            <!-- Sidebar Toggler -->
+            <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button">
+              <span></span>
+              <span class="w-75"></span>
+              <span class="w-50"></span>
+            </button>
+            <a class="logo ml-md-3" href="../../../index.html" title="VZBot 235 Alu"> 
+              <img src="../../../assets/images/logo.png" alt="VZBot" width="50" height="50"/> 
+            </a> 
+            <span class="text-2 ml-2">VZBot 235 - Full Alu Guide</span> 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+              <li class="social-icons-discord"><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+              <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-icons-github"><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="Github"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="content" role="main">
 
-<!-- Document Wrapper   
-=============================== -->
-<div id="main-wrapper"> 
-  
-  <!-- Header
-  ============================ -->
-  <header id="header" class="sticky-top"> 
-    <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
-      <div class="container-fluid">
-        <!-- Sidebar Toggler -->
-		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-		
-		<!-- Logo --> 
-        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png" alt="iDocs Template"/> </a> 
-		<span class="text-2 ml-2">v1.0</span> 
-        <!-- Logo End -->
-        
-		<!-- Navbar Toggler -->
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
-        
-		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
-                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
-                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Another Action</a>
-                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
-              </ul>
-            </li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
-            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
-          </ul>
-        </div>
-        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
-          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#vzbot_start">0. Getting started</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_about">0.1 About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_parts">0.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_print_settings">0.3 Print settings</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_video_series">0.4 Build video series</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_frame">1. Frame</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_overview">1.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_parts">1.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_sides">1.3 Frame Sides</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_inserts">1.4 Frame Inserts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_top_bottom">1.5 Frame Top/Bottom</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_joints">1.6 Frame corner joints/Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_frame_checks">1.7 Frame Checks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly">2. Z - Assembly - Part 1</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_overview">2.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_parts">2.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_bracket">2.3 Lower bracket</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_leadscrew_mount">2.4 Lower leadscrew mount</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly_lower_leadscrew_top_mount">2.5 Lower leadscrew top mount</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly">3. Bed - Assembly</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_overview">3.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_parts">3.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_mount">3.3 Mount bearings and attach</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly_mount_plate">3.4 Mount bed plate</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly">4. Z - Assembly - Part 2</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_overview">4.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_parts">4.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_top_rods">4.3 Top rod mounts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_single_z_motor">4.4 Single z motor</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_switch">4.5 Z-Switch & bed chain</a></li>
+            </ul>
+          </li>
+
         </ul>
       </div>
-    </nav>
-    <!-- Navbar End --> 
-  </header>
-  <!-- Header End --> 
-  
-  <!-- Content
-  ============================ -->
-  <div id="content" role="main">
-    
-	<!-- Sidebar Navigation
-	============================ -->
-	<div class="idocs-navigation bg-light">
-      <ul class="nav flex-column ">
-        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_installation">Installation</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">HTML Structure</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_sass">Sass</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_color_schemes">Color Schemes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_theme_customization">Customization</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">Logo Settings</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_layout">Layout</a>
-          <ul class="nav flex-column">
-			<li class="nav-item"><a class="nav-link" href="#idocs_header">Header</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_content">Content</a>
-			<ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_typography">Typography</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_code">Code</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_table">Table</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
-			<li class="nav-item"><a class="nav-link" href="#idocs_video">Video</a></li>
-          </ul>
-		</li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#idocs_accordion">Accordion</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_tabs">Tabs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
-            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
-          </ul>
-        </li>
-		<li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#idocs_support">Support</a></li>
-		<li class="nav-item"><a class="nav-link" href="#idocs_templates">More Templates</a></li>
-		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
-			<ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
-            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
-          </ul>
-		</li>
-      </ul>
-    </div>
-    
-    <!-- Docs Content
-	============================ -->
-    <div class="idocs-content">
-      <div class="container"> 
-        
-        <!-- Getting Started
-		============================ -->
-        <section id="idocs_start">
-        <h1>Documentation</h1>
-        <h2>Your ThemeForest Item Name Here</h2>
-        <p class="lead">Thank you so much for purchasing our item from themeforest.</p>
-		<hr>
-		<div class="row">
-			<div class="col-sm-6 col-lg-4">
-				<ul class="list-unstyled">
-					<li><strong>Version:</strong> 1.0</li>
-					<li><strong>Author:</strong> <a href="http://www.harnishdesign.net" target="_blank">Harnish Design</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-6 col-lg-4">
-				<ul class="list-unstyled">
-					<li><strong class="font-weight-700">Created:</strong> 8 April, 2020</li>
-					<li><strong>Update:</strong> 12 May, 2020</li>
-				</ul>
-			</div>
-		</div>
-        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Item Support Page</a>.</p>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- Installation
-		============================ -->
-        <section id="idocs_installation">
-          <h2>Installation</h2>
-          <p class="lead">Follow the steps below to setup your site template:</p>
-          <ol>
-            <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
-            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
-            <ul>
-			<li><code>HTML/assets</code> - Contains all of the assets referenced
-			  <ul>
-                <li><code>HTML/css</code> - Stylesheet files</li>
-                <li><code>HTML/images</code> - Images files</li>
-                <li><code>HTML/js</code> - Javacript files</li>
-                <li><code>HTML/sass</code> - Sass files</li>
-                <li><code>HTML/vendor</code> – All external libs.</li>
-              </ul>
-			</li>
-			<li><code>HTML/index.html</code> - Homepage
-			</ul>
-            </li>
-            <li>You should upload all or specific HTML files as per your need.</li>
-            <li>You are good to go for adding your content now!</li>
-          </ol>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- HTML Structure
-		============================ -->
-        <section id="idocs_html_structure">
-          <h2>HTML Structure</h2>
-          <p>iDocs follows a simple and easy to customize coding structure. Here is the sample for your reference:<br>
-            The template is based on <a class="ml-1" target="_blank" href="https://getbootstrap.com/"><i class="fas fa-external-link-alt"></i> Bootstrap Framework</a></p>
-          <pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
+      
+      <div class="idocs-content">
+        <div class="container">   
+          <section id="vzbot_start">
+            <h1>0. Getting started</h1>
+            <p class="lead">Thank you for building a VZBot 235.</p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Version:</strong> <a href="https://github.com/VzBoT3D/VzBoT-Vz235/tree/V2.X">2.X</a></li>
+                  <li><strong>Author:</strong> <a href="https://github.com/VzBoT3D/" target="_blank">Vez</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong class="font-weight-700">Created:</strong> 8 April, 2022</li>
+                  <li><strong>Update:</strong> 12 Januar, 2023</li>
+                </ul>
+              </div>
+            </div>
+            <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to join the 
+              <a target="_blank" href="https://discord.gg/qmMeD6Vt3W">discord</a>.
+            </p>
+          </section>
 
-&lt;!-- Your Title, Description, Stylesheets
-============================================= --&gt;
-
-&lt;/head&gt;
-
-&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.idocs-navigation&quot; data-offset=&quot;125&quot;&gt;
-
-&lt;!-- Document Wrapper   
-=============================== --&gt;
-&lt;div id=&quot;main-wrapper&quot;&gt; 
-  
-  &lt;!-- Header
-  ============================ --&gt;
-  &lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt;
-   ......
-  &lt;/header&gt;
-  &lt;!-- Header End --&gt; 
-  
-  &lt;!-- Content
-  ============================ --&gt;
-  &lt;div id=&quot;content&quot; role=&quot;main&quot;&gt; 
-    
-    &lt;!-- Sidebar Navigation
-    ============================ --&gt;
-    &lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-     .....
-    &lt;/div&gt;
-    
-    &lt;!-- Docs Content
-    ============================ --&gt;
-    &lt;div class=&quot;idocs-content&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        .......
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;!-- Content end --&gt; 
-  
-  &lt;!-- Footer --&gt;
-  &lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt; ...... &lt;/div&gt;
-  &lt;/footer&gt;
-  &lt;!-- Footer end --&gt; 
-  
-&lt;/div&gt;
-&lt;!-- Document Wrapper end --&gt; 
-
-&lt;!-- JavaScript --&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          <p class="alert alert-info">If you need more information, please visit bootstrap site: <a target="_blank" href="https://getbootstrap.com/docs/4.4/layout/grid/">https://getbootstrap.com</a></p>
-        </section>
-        
-		<hr class="divider">
-		        
-		<!-- Sass
-		============================ -->
-        <section id="idocs_sass">
-          <h2>Sass</h2>
-          <p>We have added SASS <code>.scss</code> files in template. If you know how to use SASS you can change sass files and compile the css as well.
-            You can find sass file here - <code>HTML/assets/sass</code></p>
-          <p>Open the <code>sass/_variables.scss</code> and Edit the values according to your needs. If you need more Advanced Setup then you can Edit the Respective Files yourself which have been branched inside the same Folder. It is completely at your discretion only to include the Required <code>.scss</code> Files you need to minimize the amount of CSS & including only the Styles of the Blocks you need. This can be setup in your <code>stylesheet.scss</code> File.</p>
-        </section>
-        
-		<hr class="divider">
-		
-		<!-- Color Schemes
-		============================ -->
-        <section id="idocs_color_schemes">
-          <h2>Color Schemes</h2>
-          <p>You can change your Website's Color Scheme in an instant. We have build <strong>10 Color</strong> css file for change template primary color.</p>
-          <ul>
-            <li><code>color-blue.css</code> - Blue Color</li>
-            <li><code>color-brown.css</code> - Brown Color</li>
-            <li><code>color-cyan.css</code> - Cyan Color</li>
-            <li><code>color-green.css</code> - Green Color</li>
-            <li><code>color-orange.css</code> - Orange Color</li>
-            <li><code>color-indigo.css</code> - Indigo Color</li>
-            <li><code>color-purple.css</code> - Purple Color</li>
-            <li><code>color-red.css</code> - Red Color</li>
-            <li><code>color-teal.css</code> - Teal Color</li>
-            <li><code>color-yellow.css</code> - Yellow Color</li>
-          </ul>
-          <p>Simply add Color CSS file link it in the Document <code>&lt;head&gt;</code>.<br>
-            Make sure you add the <code>css/color-blue.css</code> stylesheet in your head after the <code>css/stylesheet.css</code> file linking from above mentioned 10 color css file.</p>
-          <p><strong>For Example:</strong></p>
-          <pre><code class="html">&lt;head&gt;
-&lt;!-- Stylesheet
-============================== --&gt;
-&lt;!-- Bootstrap --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap.min.css&quot; /&gt;
-&lt;!-- Font Awesome Icon --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/font-awesome/css/all.min.css&quot; /&gt;
-&lt;!-- Magnific Popup --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/magnific-popup/magnific-popup.min.css&quot; /&gt;
-&lt;!-- Highlight Syntax --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/highlight.js/styles/github.css&quot; /&gt;
-&lt;!-- Custom Stylesheet --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/stylesheet.css&quot; /&gt;
-
-&lt;!-- Here goes your Colors Css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/color-orange.css&quot; /&gt;
-&lt;/head&gt;</code></pre>
-        </section>
-        
-		<hr class="divider">
-		
-		<!-- Customization
-		============================ -->
-        <section id="idocs_theme_customization">
-          <h2>Theme Customization</h2>
-          <p>We have include a Custom CSS File in the <code>css</code> Folder so that you can better handle your Customizations for New Styles or
-            Overwriting Default Theme Styles. Simply add all your Custom CSS Codes in the <code>css/custom.css</code> File and link it in the Document <code>&lt;head&gt;</code> after the <code>css/stylesheet.css</code> Linking. Also make sure that this is the Last Linked CSS File in the Document <code>&lt;head&gt;</code> so that your Custom CSS Styles are Overwritten properly.</p>
-          <pre><code class="html">&lt;head&gt;
-&lt;!-- Stylesheet
-============================== --&gt;
-&lt;!-- Bootstrap --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/bootstrap/css/bootstrap.min.css&quot; /&gt;
-&lt;!-- Font Awesome Icon --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/font-awesome/css/all.min.css&quot; /&gt;
-&lt;!-- Magnific Popup --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/magnific-popup/magnific-popup.min.css&quot; /&gt;
-&lt;!-- Highlight Syntax --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/vendor/highlight.js/styles/github.css&quot; /&gt;
-&lt;!-- Custom Stylesheet --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/stylesheet.css&quot; /&gt;
-
-&lt;!-- Here goes your custom.css
-============================================= --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/custom.css&quot; /&gt;
-&lt;/head&gt;</code></pre>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- Logo Settings
-		============================ -->
-        <section id="idocs_logo_settings">
-          <h2>Logo Settings</h2>
-          <p>The Logo Container can be found in the Header Container - <code>&lt;header&gt;</code></p>
-          <pre><code class="html">&lt;!-- Logo --&gt; 
-&lt;a class=&quot;logo ml-3 ml-md-0&quot; href=&quot;index.html&quot; title=&quot;iDocs&quot;&gt;
-   &lt;img src=&quot;images/logo-light.png&quot; alt=&quot;iDocs&quot;/&gt;
-&lt;/a&gt;
-&lt;!-- Logo End --&gt;
-</code></pre>
-        </section>
-		
-        
-		<hr class="divider">
-		
-		<!-- Layout
-		============================ -->
-        <section id="idocs_layout">
-          <h2>Layout</h2>
-          <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
-        </section>
-		
-		
-        <!-- Header
-		============================ -->
-        <section id="idocs_header">
-          <h2>Header</h2>
-          <p>The list of various header types & its descriptions are provided below for your reference:</p>
+          <hr class="divider">
           
-          <h4>Light</h4>
-          <p>Header with white background Color & Dark text. <span class="text-info">See below image and code for more information.</span></p>
-          <p><a class="popup-img" href="assets/images/header-light.jpg"><img class="img-fluid border" src="assets/images/header-light.jpg" alt=""></a></p>
-          <pre><code class="html">&lt;!-- Header
-============================ --&gt;
-&lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt; 
-  &lt;!-- Navbar --&gt;
-  &lt;nav class=&quot;primary-menu navbar navbar-expand-lg&quot;&gt;
-    &lt;div class=&quot;container-fluid&quot;&gt; 
-      .....
-    &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;!-- Navbar End --&gt; 
-&lt;/header&gt;
-&lt;!-- Header End --&gt;
-</code></pre>
-        
-          <h4>Dark</h4>
-          <p>Header with dark background & Light text. <span class="text-info">See below image and code for more information.</span></p>
-          <p><a class="popup-img" href="assets/images/header-dark.jpg"><img class="img-fluid border" src="assets/images/header-dark.jpg" alt=""></a></p>
-          <p>Add the <code>.bg-dark</code> and <code>.navbar-text-light</code> Class to the <code>&lt;nav&gt;</code> Tag to display a Dark Header.</p>
-          <pre><code class="html">&lt;!-- Header
-============================ --&gt;
-&lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt; 
-  &lt;!-- Navbar --&gt;
-  &lt;nav class=&quot;primary-menu navbar navbar-expand-lg bg-dark navbar-text-light&quot;&gt;
-    &lt;div class=&quot;container-fluid&quot;&gt; 
-      .....
-    &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;!-- Navbar End --&gt; 
-&lt;/header&gt;
-&lt;!-- Header End --&gt;
-</code></pre>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Navbar
-		============================ -->
-        <section id="idocs_navbar">
-          <h2>Navbar</h2>
-		  <p class="lead">Documentation and examples for powerful responsive navigation header</p>
-		  <h4 class="mt-5">Left align</h4>
-          <p>Header with Navigation alligned Left. <span class="text-info">See below image and code for more information.</span></p>
-          <p><a class="popup-img" href="assets/images/navbar-left.jpg"><img class="img-fluid border" src="assets/images/navbar-left.jpg" alt=""></a></p>
-          <p>Add the <code>.justify-content-left</code> class to the element of collapse to display a align left navbar.</p>
-<pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-start&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
+          <section id="vzbot_about">
+            <h2>0.1 About</h2>
+            VZ 235 is the smaller brother for the original VZ 330. With its relatively smaller build volume it has reduced weight and a smaller formfactor. The design is built around the popular Creality Ender 3 bed but is not limited to this size, the frame can be scaled up or down to suit your own needs.
+            <br><br>
+            The design is based on the original VZ 330 design, this makes it very easy to take features you like from the 330 and use them on 235. The entire z assembly is interchangeable, same for the partial printed printhead (exception for the front and back plate), y gantry idlers and all the smaller parts like the feet and braces.
+            <br><br>
+            The biggest difference between VZ 330 and VZ 235 is how the gantry is situated. The 235 gantry is turned around 180 degrees compared to 330. This makes room for leaving out the 2020 extrusion in the front to make a clear view and allow easy access of the build volume.
+            <br><br>
+            The reason for doing this is to allow for room to add an optional All Wheel Drive version of the gantry! Double the number of motors per axis will in term double the amount of available torque and halve the sprung length of the belts! Of course, there is also a normal 2WD version available for those who prefer this.
+            <br><br>
+            It is recommended to use the provided .step files while assembling. This manual only covers the most critical parts of the build at this moment. For using the .step files as part of the build we recommend the free version of Autodesk Fusion360, it is not hard to use and look around in the files, so even people without prior experience can do this!
+            <br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/getting_started/about.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/getting_started/about.png" alt="">
+              </a>
+            </p>
+            <br><br>
+            <h2>Disclaimer</h2>
+            VzBoT is an opensource passion project, this manual is not definitive, and we try to make it as polished as possible. Fortunately, we all make errors so use common sense when following this guide.
+          </section>
 
-<h4 class="mt-5">Right align</h4>
-          <p>Header with Navigation alligned Right. <span class="text-info">See below image and code for more information.</span></p>
-          <p><a class="popup-img" href="assets/images/navbar-right.jpg"><img class="img-fluid border" src="assets/images/navbar-left.jpg" alt=""></a></p>
-          <p>Add the <code>.justify-content-end</code> class to the element of collapse to display a align right navbar.</p>
-<pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-end&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-        
-          <h4 class="mt-5">Center Align</h4>
-          <p>Header with Navigation alligned Center. <span class="text-info">See below image and code for more information.</span></p>
-          <p><img class="img-fluid border" src="assets/images/navbar-center.jpg" alt=""></p>
-          <p>Add the <code>.justify-content-center</code> class to the element of collapse to display a align center navbar.</p>
-          <pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-center&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Sidebar
-		============================ -->
-        <section id="idocs_sidebar">
-          <h2>Sidebar</h2>
-          <p class="lead">We have built fixed sidebar navigation with <a target="_blank" href="https://getbootstrap.com/docs/4.4/components/scrollspy/">bootstrap scrollspy</a> function for docs layout. which is automatically update navigation based on scroll position to indicate which link is currently active in the viewport.</p>
-		  <p>The example below sidebar vertical navigation with bootstrap <a target="_blank" href="https://getbootstrap.com/docs/4.4/components/navs/">navs</a> and <a target="_blank" href="https://getbootstrap.com/docs/4.4/components/scrollspy/">scrollspy</a> components and section of docs content.</p>
-		<pre class="pre-scrollable"><code class="html">&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-  &lt;ul class=&quot;nav flex-column &quot;&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#item_1&quot;&gt;Item 1&lt;/a&gt;
-      &lt;ul class=&quot;nav flex-column&quot;&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_1&quot;&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_2&quot;&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2&quot;&gt;Item 2&lt;/a&gt;
-      &lt;ul class=&quot;nav flex-column&quot;&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_1&quot;&gt;Sub Item 2.1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_2&quot;&gt;Sub Item 2.2&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_3&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_4&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
+          <hr class="divider">
 
-&lt;!-- Docs Content
-============================ --&gt;
-&lt;div class=&quot;idocs-content&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt; 
-    
-    &lt;!-- Item 1 --&gt;
-    &lt;section id=&quot;item_1&quot;&gt;
-      &lt;h2&gt;Item 1&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-        &lt;!-- Item 1.1 --&gt;
-        &lt;section id=&quot;item_1_1&quot;&gt;
-          &lt;h2&gt;Item 1.1&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-        
-        &lt;!-- Item 1.2 --&gt;
-        &lt;section id=&quot;item_1_2&quot;&gt;
-          &lt;h2&gt;Item 1.2&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 2 --&gt;
-    &lt;section id=&quot;item_2&quot;&gt;
-      &lt;h2&gt;Item 2&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-        &lt;!-- Item 2.1 --&gt;
-        &lt;section id=&quot;item_2_1&quot;&gt;
-          &lt;h2&gt;Item 2.1&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-        
-        &lt;!-- Item 2.2 --&gt;
-        &lt;section id=&quot;item_2_2&quot;&gt;
-          &lt;h2&gt;Item 2.2&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 3 --&gt;
-    &lt;section id=&quot;item_3&quot;&gt;
-      &lt;h2&gt;Item 3&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 4 --&gt;
-    &lt;section id=&quot;item_4&quot;&gt;
-      &lt;h2&gt;Item 4&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-		
-		<h4>Light Sidebar:</h4>
-        <p>Light background Color & Dark text for light sidebar. See below image and code for more information.</p>
-		
-		<div class="row">
-		   <div class="col-lg-6">
-			<p><a class="popup-img" href="assets/images/sidebar-light.jpg"><img class="img-fluid border" src="assets/images/sidebar-light.jpg" alt=""></a></p>
-		   </div>
-		</div>
-		
-		<p>Add the <code>.bg-light</code> class to the main sidebar navigation div element to display a light sidebar.</p>
-		<pre><code>&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-  ....
-&lt;/div&gt;</code></pre>
+          <section id="vzbot_parts">
+            <h2>0.2 Parts</h2>
+            <br><br>
+            <h3>List of needed Parts</h3>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Source 1</th>
+                    <th>Source 2</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020 Extrusion xxx mm</td>
+                    <td>2</td>
+                    <td><a href="www.google.de">Source1</a></td>
+                    <td><a href="www.google.de">Source2</a></td>
+                    <td>Need to be tapped and drilled holes on x/y with z/i</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-<h4>Dark Sidebar:</h4>
-        <p>Dark background Color & Light text for dark sidebar. See below image and code for more information.</p>
-		
-		<div class="row">
-		   <div class="col-lg-6">
-			<p><a class="popup-img" href="assets/images/sidebar-dark.jpg"><img class="img-fluid border" src="assets/images/sidebar-dark.jpg" alt=""></a></p>
-		   </div>
-		</div>
-		
-		<p>Add the <code>.bg-dark</code> and <code>.docs-navigation-dark</code> class to the main sidebar navigation div element to display a dark sidebar.</p>
-		<pre><code>&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-dark docs-navigation-dark&quot;&gt;
-  ....
-&lt;/div&gt;</code></pre>
-		</section>
-		
-		<hr class="divider">
-		
-        <!-- Footer
-		============================ -->
-        <section id="idocs_footer">
-          <h2>Footer</h2>
-          <p>The list of various footer types & its descriptions are provided below for your reference:</p>
-          <h4>Light Footer</h4>
-          <p>Footer with white background Color & Dark text. See below code for more information.</p>
-          <pre><code class="html">&lt;!-- Footer
-============================================= --&gt;
-  &lt;footer id=&quot;footer&quot; class=&quot;section bg-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-    	..........
-    &lt;/div&gt;
-  &lt;/footer&gt;
-&lt;!-- Footer end --&gt;</code></pre>
-          <h4>Dark Footer</h4>
-          <p>Footer with dark background color & Light text. See below code for more information.</p>
-          <p>Add the <code>.bg-dark</code> and <code>.footer-text-light</code> Class to the <code>footer</code> Tag to display a Dark footer.</p>
-          <pre><code class="html">&lt;!-- Footer
-============================================= --&gt;
-&lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-    	..........
-    &lt;/div&gt;
-&lt;/footer&gt;
-&lt;!-- Footer end --&gt;</code></pre>
-        </section>
-        
-		<hr class="divider">
-		
-		<!-- Box Layout Style
-		============================ -->
-        <section id="idocs_box_layout">
-          <h2>Box Layout Style</h2>
-          <div>
-            <p>Default Layout Style is wide. Please add the <code>.box</code> class to the <code>&lt;body&gt;</code> Tag for box layout.</p>
-			  <pre><code class="html">&lt;body class="box" data-spy="scroll" data-target=".idocs-navigation" data-offset="125"&gt;</code></pre>
-          </div>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Content
-		============================ -->
-        <section id="idocs_content">
-          <h2>Content</h2>
-          <p class="lead mb-5">Documentation and examples for displaying typography, code, table, image and video and more..</p>
-        </section>
-		  
-		<!-- Typography
-		============================ -->
-		<section id="idocs_typography">
-		  <h2>Typography</h2>
-		  <p class="text-4">Documentation and examples for typography, headings, body text, lists, and more.</p>
-		  <h3>Headings</h3>
-		  <table class="table table-bordered">
+          <hr class="divider">
+          
+          <section id="vzbot_print_settings">
+            <h2>0.3 Print settings</h2>
+            We recommend printing all parts in ABS, ASA or similar material to be able to withstand the high heat environment in the printer enclosure.
+            <br>
+            Print settings should always be tuned for your own material and tested for decent strength and layer adhesion.
+            <br><br><br>
+            <h3>We recommend the following settings:</h3>
+            <br>
+            <h4>For non-moving parts:</h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Layer height</th>
+                    <th>Layer with</th>
+                    <th>Number of walls</th>
+                    <th>Infill percentrage</th>
+                    <th>Top/Bottom layers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0.2 mm</td>
+                    <td>0.4 to 0.6 mm</td>
+                    <td>4</td>
+                    <td>40 to 50 %</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <h4>For moving parts:</h4>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Layer height</th>
+                    <th>Layer with</th>
+                    <th>Number of walls</th>
+                    <th>Infill percentrage</th>
+                    <th>Top/Bottom layers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0.2 mm</td>
+                    <td>0.4 to 0.6 mm</td>
+                    <td>4</td>
+                    <td>30 to 40 % <br>depending on your material</td>
+                    <td>5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="vzbot_video_series">
+            <div class="container text-center py-5">
+              <h3>Video Series by Vez</h3>
+              <div class="row justify-content-center mx-lg-5">
+                <div class="col-md-6 my-4">
+                  <a target="_blank" href="full/235/alu/index.html">
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/d9kQt_cF3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+                    <span class="text-dark text-6 font-weight-600 mt-3 d-block"> 
+                      Build Part 1: The frame
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-6 my-4">
+                  <a target="_blank" href="full/235/printed/index.html">
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/1hXNWs6Stjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <span class="text-dark text-6 font-weight-600 mt-3 d-block"> 
+                      Build part 2: The Z axis
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-6 my-4">
+                  <a target="_blank" href="full/235/printed/index.html">
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/lP59PClF_PU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <span class="text-dark text-6 font-weight-600 mt-3 d-block"> 
+                      Build part 3: The Gantry
+                    </span>
+                  </a>
+                </div>
+                <div class="col-md-6 my-4">
+                  <a target="_blank" href="full/235/printed/index.html">
+                    <iframe width="400" height="315" src="https://www.youtube.com/embed/bEGVnYrXJG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <span class="text-dark text-6 font-weight-600 mt-3 d-block"> 
+                      Build part 4: The electronics
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>  
+          </section>
+        </div>
+
+        <div class="container">
+          <section id="vzbot_frame">
+            <h2>1. Frame</h2>
+          </section>
+
+          <section id="vzbot_frame_overview">
+            <h3>1.1 Overview</h3>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame.png" alt="">
+              </a>
+            </p>
+            The frame is assembled through a combination of blind joints, corner brackets and blind corner brackets. The corner brackets are to help stiffen up the frame and are optional, though we highly recommend using them on every possible corner for best results.
+            <br><br>
+            <hr class="devider">
+            <h4>1.1.1 How to assemble a blind corner joint</h4>
+            <br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/blind_joints.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/blind_joints.png" alt="">
+              </a>
+            </p>
+            <br><br>
+            <hr class="devider">
+            <h4>1.1.2 Useful links about the assembly of blind joints</h4>            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2dvbn0rWA60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ueniUWrUcjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_frame_parts">
+            <h2>1.2 Parts</h2>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame_colored.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame_colored.png" alt="">
+              </a>
+            </p>
+            <br><br>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2020 extrusion ( 385mm )</td>
+                    <td>4</td>
+                    <td>Yellow</td>
+                  </tr>
+                  <tr>
+                    <td>2020 extrusion ( 375 mm )</td>
+                    <td>6</td>
+                    <td>Red</td>
+                  </tr>
+                  <tr>
+                    <td>2020 extrusion ( 470 mm )</td>
+                    <td>4</td>
+                    <td>Blue</td>
+                  </tr>
+                  <tr>
+                    <td>2020 extrusion ( 385 mm )</td>
+                    <td>1</td>
+                    <td>Only for 2WD, mount the same as Y gantry extrusions</td>
+                  </tr>
+                  <tr>
+                    <td>2020 corner joints</td>
+                    <td>18</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>2020 blind corner joints</td>
+                    <td>4</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M5/M6 10mm buttonhead</td>
+                    <td>20</td>
+                    <td>Depending on the type of 2020 you use you need M5 or M6 screws</td>
+                  </tr>
+                  <tr>
+                    <td>M4 xxmm</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 t-nut</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Brace</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                  <tr>
+                    <td>Handle</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                  <tr>
+                    <td>Y Alignment tool</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                  <tr>
+                    <td>Nut insert for motor mounts</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                  <tr>
+                    <td>Door latch frame mount</td>
+                    <td>4</td>
+                    <td>link</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_frame_sides">
+            <h2>1.3 Frame sides</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Part</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M5/M6 10mm buttonhead</td>
+                    <td>12</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Y alignment tool</td>
+                    <td>2</td>
+                    <td><a href="https://github.com/VzBoT3D/VzBoT-Vz235/blob/main/Assemblies%20%26%20STL/Tools/vzbot%20y%20gantry%202020%20allignment%20tool%20v1.stl">github</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            To start you are going to build the 2 sides of your frame. Make sure you do your building on a nice flat surface. You will lay your frame half down with the 
+            included printed alignment tools for the y gantry extrusions and hand tighten all blind joints.
+            <br><br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame_side.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame_side.png" alt="">
+              </a>
+            </p>
+            <br><br><br>
+            After hand tightening you can start tightening everything down properly. Make sure every corner is <b>exactly 90 degrees</b>. Moreover, make sure the <b>Y gantry extrusion 
+            is parallel to the upper and lower extrusion</b> of the frame half. The Y gantry extrusion is the only extrusion that <b>can't</b> use a 2020 corner joint bracket, 
+            it is stabilized by the motormount so there is no need for extra reinforcement.
+            <br><br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame_sides.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame_sides.png" alt="">
+              </a>
+            </p>
+            <br><br>
+            Once you are done with one half repeat for the other half. Check the two halves by laying them on top of eachother with all corners exactly in the same spot and check the 
+            y gantry extrusions for the two halves whether they are parallel to eachother. They need to be parallel for the printer to operate smoothly.
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_frame_inserts">
+            <h2>1.4 Frame inserts</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Part</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Door latch frame mount</td>
+                    <td>4</td>
+                    <td><a href="https://github.com/VzBoT3D/VzBoT-Vz235/blob/main/Assemblies%20%26%20STL/Enclosure/Front%20door%20latches/Magnetic%20latch/Door%20latch%20mount.stl">github</a></td>
+                  </tr>
+                  <tr>
+                    <td>Nut insert for motormount</td>
+                    <td>2</td>
+                    <td><a href="https://github.com/VzBoT3D/VzBoT-Vz235/blob/main/Assemblies%20%26%20STL/Gantry/Motormounts/left%20motormounts/nut%20insert%20for%20motormount.stl">github</a></td>
+                  </tr>
+                  <tr>
+                    <td>M4 nut</td>
+                    <td>6</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            The bottom, top and upright extrusions in the front of the frame all have printed nut inserts inserted. 2 in the top for the door latches, 2 in the bottom for 
+            the lower latches and 1 in upright for the motor mounts to attach to. Insert the M4 nuts into the M4 inserts and push them in the uprights on the frame half. 
+            Next insert the 2x5mm magnets and the m3 nut into the frame part of the magnetic door latches and put 2 in the front lower and 2 in the front upper extrusion 
+            as shown in the picture before assembling the final part of the frame.
+            <br><br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame_inserts.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame_inserts.png" alt="">
+              </a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_frame_top_bottom">
+            <h2>1.5 Frame top and bottom</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Part</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M5/M6 10mm buttonhead</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>2020 blind corner joints</td>
+                    <td>2</td>
+                    <td>They should be used for the front bottom, you can't use a normal corner joint there.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            Attach the extrusions to connect the two halves of the frame. Make sure to put the part you are assembling on the flat surface and afterwards check the frame on squareness.
+            <br><br><br>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/alu/frame/frame_complete.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/alu/frame/frame_complete.png" alt="">
+              </a>
+            </p>
+          </section>
+
+          <hr class="divider">
+          
+          <section id="vzbot_frame_joints">
+            <h2>1.6 Frame joints and parts</h2>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Material</th>
+                    <th>Quantity</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>M4 xxmm</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>M4 t-nut</td>
+                    <td>8</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Handle</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                  <tr>
+                    <td>Brace</td>
+                    <td>2</td>
+                    <td>link</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            Attach all your corner joints to the frame, if this is done you can go on and install the handle with the 4 x M4 t-nut and the 4 x M4 xxmm screws,
+            and also attach the bracer in the bottom front of the printer with 4 x M4 t-nuts and 4 x M4 xxmm screws.
+          </section>
+
+          <hr class="divider">
+          
+          <section id="vzbot_frame_checks">
+            <h2>1.7 Frame checks</h2>
+            After you build your frame as a hole it's time for some final checks, make sure your frame as square on every side.
+            And also take care that the two y gantry parts are parallel aswell.
+            <br><br>
+            "TODO link zu nero messure method for squareness"
+          </section>  
+          
+          <hr class="divider">
+
+          <div class="container" id="vzbot_z_assembly">
+            <section id="vzbot_z_assembly">
+              <h2>2. Z-Assembly</h2>
+            </section>
+            
+            <section id="vzbot_z_assembly_overview">
+              <h2>2.1 Overview</h2>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_overview.png">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_overview.png" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z_assembly_parts">
+              <h2>2.2 Parts</h2>
+              <div class="table-responsive">
+                <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th>Heading</th>
-                      <th>Example</th>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
-                      <td><h1>h1. Heading</h1></td>
+                      <td>M4 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
-                      <td><h2>h2. Heading</h2></td>
+                      <td>M4 12mm</td>
+                      <td>16</td>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
-                      <td><h3>h3. Heading</h3></td>
+                      <td>M4 t-nut</td>
+                      <td>20</td>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
-                      <td><h4>h4. Heading</h4></td>
+                      <td>608-2RS bearings</td>
+                      <td>4</td>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
-                      <td><h5>h5. Heading</h5></td>
+                      <td>10mm rods ( 300 mm )</td>
+                      <td>4</td>
+                      <td>-</td>
                     </tr>
                     <tr>
-                      <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
-                      <td><h6>h6. Heading</h6></td>
+                      <td>Belt GT2 closed ( 860 mm )</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Leadscrew TR8 ( 300 mm )</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 40 teeth</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 20 teeth</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Z assembly alignment tool</td>
+                      <td>1</td>
+                      <td>link</td>
                     </tr>
                   </tbody>
                 </table>
-		
-		<h3 class="mt-5">Lead</h3>
-		<p>Make a paragraph stand out by adding <code>.lead</code></p>
-		<p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
-		<pre><code class="html">&lt;p class=&quot;lead&quot;&gt;
-   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-&lt;/p&gt;</code></pre>
-		
-		<h3 class="mt-5">Inline Text elements</h3>
-		<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-		<p><del>This line of text is meant to be treated as deleted text.</del></p>
-		<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-		<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-		<p><u>This line of text will render as underlined</u></p>
-		<p><small>This line of text is meant to be treated as fine print.</small></p>
-		<p><strong>This line rendered as bold text.</strong></p>
-		<p><em>This line rendered as italicized text.</em></p>
-		
-		<pre><code class="html">&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
-&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
-</code></pre>
-		</section>
-		
-		<hr class="divider">
-		
-		<!-- Code
-		============================ -->
-		<section id="idocs_code">
-		  <h2>Code</h2>
-		  <p class="text-4">Documentation and examples for displaying inline and multiline blocks of code</p>
-		  
-		  <h3 class="mt-5">Inline code</h3>
-		  <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>. <span class="text-info">Be sure to escape HTML angle brackets</span>.</p>
-		  
-		  <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
-		  <pre><code class="html">For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.</code></pre>
-		  
-		  
-		  <h3 class="mt-5">Code blocks</h3>
-		  <p>Use <code>&lt;pre&gt;</code>s for multiple lines of code. <span class="text-info">Once again, be sure to escape any angle brackets in the code for proper rendering</span>. You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 340px and provide a y-axis scrollbar.</p>
-		  <p><strong>For example:</strong></p>
-		  <pre><code class="html">&lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;p&gt;And another line of sample text here...&lt;/p&gt;
-</code></pre>
-<p><strong>Have to use something like:</strong></p>
-<pre><code class="html">&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;Sample text here...&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;And another line of sample text here...&amp;lt;/p&amp;gt;
-&lt;/pre&gt;&lt;/code&gt;
-</code></pre>
-		
-		<h3 class="mt-5">Syntax highlighter</h3>
-		<p>We use <strong><a target="_blank" href="https://highlightjs.org/">Highlight Js</a></strong> for syntax highlight code snippet.</p>
-		<p>You can refer more information here: <a class="btn btn-primary" target="_blank" href="https://highlightjs.org/usage/"><i class="fas fa-external-link-alt mr-1"></i> How to use highlight.js</a></p>
-		</section>
-		
-		<hr class="divider">
-		
-		<!-- Table
-		============================ -->
-		<section id="idocs_table">
-		<h2>Table</h2>
-		<p class="text-4">Documentation and examples for opt-in styling of tables.</p>
-		<p>iDocs is based on Bootstrap 4, so you can easily use Bootstrap's table classes to style your table. <a class="ml-1" target="_blank" href="https://getbootstrap.com/docs/4.4/content/tables/"><i class="fas fa-external-link-alt"></i> Bootstrap Documentation</a></p>
-		
-		<h3 class="mt-5">Bordered</h3>
-		<pre><code class="html">&lt;table class=&quot;table table-bordered&quot;&gt;
-   .......
-&lt;/table&gt;</code></pre>
-		
-		<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-		
-		<h3 class="mt-5">Striped</h3>
-		<pre><code class="html">&lt;table class=&quot;table table-bordered table-striped&quot;&gt;
-   .......
-&lt;/table&gt;</code></pre>
-		
-		<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-		<p><span class="badge badge-danger text-uppercase mr-2">Note</span>You can refer more information in Bootstrap Documentation here: <a class="btn btn-primary" target="_blank" href="https://getbootstrap.com/docs/4.4/content/tables/"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap Documentation</a></p>
-		</section>
-		
-		<hr class="divider">
-		
-		<!-- Icons
-		============================ -->
-        <section id="idocs_icons">
-          <h2>Icons</h2>
-          <p><strong>Font Awesome</strong> icon sets are used in iDocs.</p>
-		  
-          <pre><code class="html">&lt;i class=&quot;fas fa-mobile-alt&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;fas fa-credit-card&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
-</code></pre>
-<p><span class="badge badge-danger text-uppercase mr-2">Note</span>Please go to their official documentation pages for a full list of icons: <a class="btn btn-primary" target="_blank" href="https://fontawesome.com/icons"><i class="fas fa-external-link-alt mr-1"></i> Font Awesome</a></p>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Image
-		============================ -->
-        <section id="idocs_image">
-          <h2>Image</h2>
-          <p class="text-4">Documentation and examples for opting images into responsive behavior and add lightweight styles to them—all via classes.</p> 
-          
-		  <h3 class="mt-5">Responsive Images</h3>
-		  <p>Images in Bootstrap are made responsive with <code>.img-fluid.</code> <code>max-width: 100%;</code> and <code>height: auto;</code> are applied to the image so that it scales with the parent element.</p>
-		  <p><img src="assets/images/screenshot.jpg" class="img-fluid" alt="Responsive image"></p>
-          <pre><code class="html">&lt;img src=&quot;assets/images/screenshot.jpg&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive image&quot;&gt;</code></pre>
-		  
-		  <h3 class="mt-5">Image lightbox</h3>
-		  <p>Show image popup when click on image:</p>
-		  <p><a class="popup-img" href="assets/images/screenshot.jpg"><img src="assets/images/screenshot-thumb.jpg" class="img-fluid img-thumbnail" alt="image"></a></p>
-		  <pre><code class="html">&lt;a class=&quot;popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;
-  &lt;img src=&quot;assets/images/screenshot-thumb.jpg&quot; class=&quot;img-fluid img-thumbnail&quot; alt=&quot;image&quot;&gt;
-&lt;/a&gt;</code></pre>
-		  		  
-		  <h3 class="mt-5">Image Lightbox with Link</h3>
-		  <p>Show image popup when click on link: <a class="popup-img" href="assets/images/screenshot.jpg">Click Here for Popup Image</a></p>
-		  <pre><code class="html">&lt;a class=&quot;popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;Click Here for Popup Image&lt;/a&gt;</code></pre>
+              </div>
+            </section>
 
-		  <h3 class="mt-5">Image lightbox with Button</h3>
-		  <p>Show image popup when click on button: <a class="btn btn-primary popup-img" href="assets/images/screenshot.jpg">Click Here for Popup Image</a></p>
-		  <pre><code class="html">&lt;a class=&quot;btn btn-primary popup-img&quot; href=&quot;assets/images/screenshot.jpg&quot;&gt;Click Here for Popup Image&lt;/a&gt;</code></pre>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- Video
-		============================ -->
-        <section id="idocs_video">
-          <h2>Video</h2>
-          <p class="text-4">Create responsive video embeds based on the width of the parent by creating an intrinsic ratio that scales on any device.</p> 
-          
-		  <h3 class="mt-5">Embedded Video</h3>
-		  <p>Wrap any embed like an <code>&lt;iframe&gt;</code> in a parent element with <code>.embed-responsive</code> and an aspect ratio. The <code>.embed-responsive-item</code> isn’t strictly required, but we encourage it.</p>
-		  <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7e90gBu4pas" allowfullscreen></iframe>
-</div>
-          <pre><code class="html">&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
-  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/7e90gBu4pas&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</code></pre>
-		  <p><span class="badge badge-danger text-uppercase mr-2">Note</span>Please go to official bootstrap documentation for a full information of embed video: <a class="btn btn-primary" target="_blank" href="https://getbootstrap.com/docs/4.4/utilities/embed/"><i class="fas fa-external-link-alt mr-1"></i> Bootstrap Documentation</a></p>
-		  
-		  <h3 class="mt-5">Popup with Video</h3>
-		  <p>Show <strong>Youtube</strong> and <strong>Vimeo</strong> video popup when click on link:</p>
-		  <p><a class="popup-youtube" href="http://www.youtube.com/watch?v=7e90gBu4pas">Open Popup YouTube Video </a></p>
-		  <pre><code class="html">&lt;a class=&quot;popup-youtube&quot; href=&quot;http://www.youtube.com/watch?v=7e90gBu4pas&quot;&gt;Open Popup YouTube Video &lt;/a&gt;</code></pre>
-		  
-		  <p><a class="popup-vimeo" href="https://vimeo.com/45830194">Open Popup Vimeo video</a></p>
-		  <pre><code class="html">&lt;a class=&quot;popup-vimeo&quot; href=&quot;https://vimeo.com/45830194&quot;&gt;Open Popup Vimeo video&lt;/a&gt;</code></pre>
-        </section>
-        
-		<hr class="divider">
-		
-        <!-- Components
-		============================ -->
-        <section id="idocs_components">
-          <h2>Components</h2>
-          <p class="mb-5">Setting up components is very easy. Here is the Some of shortcodes describe. also, <strong>iDocs</strong> is based on Bootstrap 4, so you can easily use Bootstrap's components:  <a class="ml-1" target="_blank" href="https://getbootstrap.com/docs/4.4/components/"><i class="fas fa-external-link-alt"></i> Bootstrap Documentation</a></p>
-        </section>
-		  
-		  <!-- Accordion
-		  ============================ -->
-		  <section id="idocs_accordion">
-            <h2>Accordion</h2>
-			<p>You can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use <code>.accordion</code> as a wrapper.</p>
-			<p>See below image and code for more information.</p>
-			<p><a class="popup-img" href="assets/images/accordion.jpg"><img class="img-fluid border" src="assets/images/accordion.jpg" alt=""></a></p>
-			<pre><code class="html">&lt;div class=&quot;accordion&quot; id=&quot;accordionDefault&quot;&gt;
-  &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;card-header&quot; id=&quot;headingOne&quot;&gt;
-      &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseOne&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;Accordion Title&lt;/a&gt; &lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseOne&quot; class=&quot;collapse show&quot; aria-labelledby=&quot;headingOne&quot; data-parent=&quot;#accordionDefault&quot;&gt;
-      &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;card-header&quot; id=&quot;headingTwo&quot;&gt;
-      &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;Accordion Title&lt;/a&gt; &lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseTwo&quot; class=&quot;collapse&quot; aria-labelledby=&quot;headingTwo&quot; data-parent=&quot;#accordionDefault&quot;&gt;
-      &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;card-header&quot; id=&quot;headingThree&quot;&gt;
-      &lt;h5 class=&quot;mb-0&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;Accordion Title&lt;/a&gt; &lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;collapseThree&quot; class=&quot;collapse&quot; aria-labelledby=&quot;headingThree&quot; data-parent=&quot;#accordionDefault&quot;&gt;
-      &lt;div class=&quot;card-body&quot;&gt;This is Accordion Content&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-            <h4>Options:</h4>
-            <div class="table-responsive">
-			<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Type Class</th>
-      <th>Features</th>
-      <th>Code Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>.accordion-alternate</code></td>
-      <td>Alternate Minimal Style for the accordions.</td>
-      <td><pre class="mb-0"><code>&lt;div class=&quot;accordion accordion-alternate&quot; id=&quot;accordionDefault&quot;&gt;
-  .......
-&lt;/div&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.arrow-right</code></td>
-      <td>For set arrow in right side in accordions</td>
-      <td><pre class="mb-0"><code>&lt;div class=&quot;accordion arrow-right&quot; id=&quot;accordionDefault&quot;&gt;
-  .......
-&lt;/div&gt;</code></pre></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-          </section>
-          
-		  <hr class="divider">
-		  
-		  <!-- Tabs
-		  ============================ -->
-		  <section id="idocs_tabs">
-            <h2>Tabs</h2>
-            <p class="text-4">Default <a href="https://getbootstrap.com/docs/4.4/components/navs/#javascript-behavior">Bootstrap Nav</a> component combined with iDocs for unique tabs.</p>
-			<p>See below image and code for more information.</p>
-			<p><a class="popup-img" href="assets/images/tabs.jpg"><img class="img-fluid border" src="assets/images/tabs.jpg" alt=""></a></p>
-			
-            <pre><code class="html">&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-    &lt;a class=&quot;nav-link active&quot; id=&quot;home-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot; aria-controls=&quot;home&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-    &lt;a class=&quot;nav-link&quot; id=&quot;profile-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot; aria-controls=&quot;profile&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
-    &lt;a class=&quot;nav-link&quot; id=&quot;contact-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#contact&quot; role=&quot;tab&quot; aria-controls=&quot;contact&quot; aria-selected=&quot;false&quot;&gt;Contact&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;tab-content my-3&quot; id=&quot;myTabContent&quot;&gt;
-  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;home-tab&quot;&gt;This is Tab Content Home&lt;/div&gt;
-  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;profile-tab&quot;&gt;This is Tab Content Profile&lt;/div&gt;
-  &lt;div class=&quot;tab-pane fade&quot; id=&quot;contact&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;contact-tab&quot;&gt;This is Tab Content Contact&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+            <hr class="divider">
+
+            <section id="vzbot_z_assembly_lower_bracket">
+              <h3>2.3 Lower bracket</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 12mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 t-nut</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>10mm rods ( 300 mm )</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Z assembly alignment tool</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              Mount the top bracket with the 12mm M4 hardware to the frame loosely. Then mount the sliding rods with 12mm M4 screws and align the assembly to the frame using the printed “Z assembly alignment tool”. 
+              Be sure to secure all hardware. Be sure to either insert 2 T-nuts underneath the center two holes for the top leadscrew bracket or immediately mount the top bracket.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket.png">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket.png" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z_assembly_lower_leadscrew_mount">
+              <h3>2.4 Lower lead screw mount</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 t-nut</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>608-2RS bearings</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              Mount the lower leadscrew bracket, using 2x 10mm M4 screws, loosely to the frame approximately in the correct position relative to the top bracket.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket_lead.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_lower_bracket_lead.PNG" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z_assembly_lower_leadscrew_top_mount">
+              <h3>2.5 Lower leadscrew top mount</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 12mm</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>608-2RS bearings</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 40 teeth ( 5 )</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              Mount the top leadscrew bracket to the assembly using 12mm M4 screws (skip when done in step one). Insert the pulley with the closed belt and insert the leadscrew. Then tighten the grub screws on 
+              the pulley. Lastly while making sure the leadscrew is perfectly straight up tighten the screws on the upper and lower leadscrew brackets. This can be checked by measuring the distance on both sides 
+              between the leadscrew (top position) and the 10mm Rods.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_upper_bracket_lead.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_1/z_assembly_upper_bracket_lead.PNG" alt="">
+                </a>
+              </p>
+              <br><br>
+              <b>Repeat <a href="#vzbot_z_assembly_lower_bracket">2.3</a> / 
+              <a href="#vzbot_z_assembly_lower_leadscrew_mount">2.4</a> / 
+              <a href="#vzbot_z_assembly_lower_leadscrew_top_mount">2.5</a> for the other side of the printer</b>
+            </section>
+          </div>
+
+          <hr class="divider">
+
+          <div class="container" id="vzbot_bed_assembly">
+            <section id="vzbot_bed_assembly">
+              <h2>3. Bed - Assembly</h2>
+            </section>
+
+            <section id="vzbot_bed_assembly_overview">
+              <h3>3.1 Overview</h3>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_overview.PNG" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_bed_assembly_parts">
+              <h3>3.2 Parts</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 8mm</td>
+                      <td>16</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 8mm</td>
+                      <td>16</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 nut</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 50mm ( countersunk )</td>
+                      <td>4</td>
+                      <td>Countersunk for the bed</td>
+                    </tr>
+                    <tr>
+                      <td>LMK10LUU</td>
+                      <td>4</td>
+                      <td>If you want to use the bought version</td>
+                    </tr>
+                    <tr>
+                      <td>LM10LUU</td>
+                      <td>4</td>
+                      <td>Use this from the old bed and print 4 of this ( link )</td>
+                    </tr>
+                    <tr>
+                      <td>Oldham coupler</td>
+                      <td>2</td>
+                      <td>Optional but highly advised</td>
+                    </tr>
+                    <tr>
+                      <td>Leadscrew nut</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Bed level knobs</td>
+                      <td>4</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Springs / Silicon dumper</td>
+                      <td>4</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Oldham couplers ( printed )</td>
+                      <td>2</td>
+                      <td>optional / link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_bed_assembly_mount">
+              <h3>3.3 Mount bearings and attach</h3>
+              Mount the LMK10LUU using the M4 10mm hardware to the bed frame. Then mount the Oldham couplers with the leadscrew nuts together with M3 10mm and the M3 nut 
+              and mount that assembly to the bed frame using M3 hardware.<br>
+              Afterwards place the bed assembly in the rods and the leadscrew.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_mount.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_mount.PNG" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_bed_assembly_mount_plate">
+              <h3>3.4 Mount bed plate</h3>
+              Mount the bed plate to the bed frame using the 50mm countersunk M3 screws, put a Spring or a silicon dumper on each corner of the bed before
+              attaching the screw and the bed level knob to it. Then give every knob a small "torque" so you can later level your bed propperly.
+              When using a cast aluminum bed make sure it is well prepped before mounting. It is recommended to always be safe and inform yourself properly 
+              on how to apply a AC silicon heating pad.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_plate.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/bed_assembly/bed_assembly_plate.PNG" alt="">
+                </a>
+              </p>
+            </section>
+          </div>
+
+          <hr class="divider">
+
+          <div class="container" id="vzbot_z2_assembly">
+            <section id="vzbot_z2_assembly">
+              <h2>4. Z - Assembly - Part 2</h2>
+            </section>
+
+            <section id="vzbot_bed_assembly_overview">
+              <h3>4.1 Overview</h3>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_overview.PNG" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_parts">
+              <h3>4.2 Parts</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 20mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 8mm</td>
+                      <td>1</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>10</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 nut</td>
+                      <td>3</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M2 10mm</td>
+                      <td>2</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>Microswitch</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 20 teeth</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>NEMA 17 stepper</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Chain mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Endstop mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_top_rods">
+              <h3>4.3 Top rod mounts</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 20mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <b>Important: When mounting the top rod's make sure the top rod with the extra hole for the z switch is in the back</b> <br><br>
+              Mount the 10mm M4 screws and t-nuts to all top rod mounts and loosely turn in the 20mm M4 screws in the clamping mechanism. <br>
+              Mount all top rod mounts to the rod first, finally tighten the rod holders to the frame with the pre-inserted M4 hardware.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_rod.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_rod.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              After installing check the movement of the bed assembly by turning the leadscrews. This should operate smoothly. 
+              If not, place the bed assembly in the top most position, untighten all top rod holders and retighten to align the rods.
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_single_z_motor">
+              <h3>4.4 Single z motor</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 20 teeth</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>NEMA 17 stepper</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_overview.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the bracket shown below to the frame using the 10mm M4 screws and T-nuts. Make sure it is 
+              nicely centered in the middle of the frame.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket.PNG" alt="">
+                </a>
+              </p>
+              <br><br>
+              Mount the stepper motor to the top bracket using the 10mm M3 screws. Attach the motor pulley like 
+              shown below.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket2.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket2.PNG" alt="">
+                </a>
+              </p>
+              <br><br>
+              Mount the previous assembly to the bracket on the frame using 10mm M3 screws.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_mounted.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              With the motor in the furthest position, loop the belt around the motor pulley and tighten the belt. 
+              Be sure to check if the belt is horizontally parallel to the frame for smoothest operation.
+            </section>
             
-			<h4>Options:</h4>
-            <div class="table-responsive">
-			<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Type Class</th>
-      <th>Features</th>
-      <th>Code Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>Basic Navs</code></td>
-      <td>Basic Navs Style for the Tabs</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.nav-separator</code></td>
-      <td>Basic Navs Style with Separator for the Tabs</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;nav &quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.nav-tabs</code></td>
-      <td>Tabs Navs Style for the Tabs. For example - above Preview Example.</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;nav nav-tabs&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.nav-pills</code></td>
-      <td>Pills Navs Style for the Tabs</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;nav nav-pills&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	
-  </tbody>
-</table>
-</div>
-          </section>
-          
-		  <hr class="divider">
-		  		  
-          <!-- Social Icon
-		  ============================ -->
-		  <section id="idocs_social_icon">
-            <h3>Social Icon</h3>
-            <p>Social links with different styles. See below code for more information.</p>
-            <pre><code class="html">&lt;div class=&quot;d-flex flex-column&quot;&gt;
-  &lt;ul class=&quot;social-icons&quot;&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.facebook.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.twitter.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Twitter&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Google&quot;&gt;&lt;i class=&quot;fab fa-google&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.linkedin.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Linkedin&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.youtube.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Youtube&quot;&gt;&lt;i class=&quot;fab fa-youtube&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a data-toggle=&quot;tooltip&quot; href=&quot;http://www.instagram.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Instagram&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-            <h4>Options:</h4>
-			<div class="table-responsive">
-			<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Type Class</th>
-      <th>Features</th>
-      <th>Code Example</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Default (Dark)</td>
-      <td>Default Social Icon with Dark Color</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-    <tr>
-      <td><code>.social-icons-light</code></td>
-      <td>Social Icon with Light Color</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-light&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.social-icons-muted</code></td>
-      <td>Social Icon with Muted Color</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-muted&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-	<tr>
-      <td><code>.social-icons-sm</code></td>
-      <td>Social Icon with Small Icon Size</td>
-      <td>
-	  <pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-sm&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre>
-	  </td>
-    </tr>
-	<tr>
-      <td><code>.social-icons-lg</code></td>
-      <td>Social Icon with Large Icon Size</td>
-      <td><pre class="mb-0"><code>&lt;ul class=&quot;social-icons social-icons-lg&quot;&gt;
-  .......
-&lt;/ul&gt;</code></pre></td>
-    </tr>
-    
-  </tbody>
-</table>
-</div>
-          </section>
-		  
-		  <hr class="divider">
-		  
-		  <!-- Helper Classes
-		  ============================ -->
-          <section id="idocs_helper_classes">
-            <h3>Helper Classes</h3>
-            <p>We have created some really useful helper classes for you. Here are a few of them. also, You can refer other default bootstrap helper classes here: <a class="ml-1" target="_blank" href="https://getbootstrap.com/docs/4.4/utilities/"><i class="fas fa-external-link-alt"></i> Bootstrap Documentation</a> </p>
-			            
-			<h5>Text Size:</h5>
-            <ul>
-              <li><code>.text-0</code> - Changes the Font size to 11px.</li>
-              <li><code>.text-1</code> - Changes the Font size to 12px.</li>
-              <li><code>.text-2</code> - Changes the Font size to 14px.</li>
-              <li><code>.text-3</code> - Changes the Font size to 16px.</li>
-              <li><code>.text-4</code> - Changes the Font size to 18px.</li>
-              <li><code>.text-5</code> - Changes the Font size to 21px.</li>
-              <li><code>.text-6</code> - Changes the Font size to 24px.</li>
-              <li><code>.text-7</code> - Changes the Font size to 28px.</li>
-              <li><code>.text-8</code> - Changes the Font size to 32px.</li>
-              <li><code>.text-9</code> - Changes the Font size to 36px.</li>
-              <li><code>.text-10</code> - Changes the Font size to 40px.</li>
-              <li><code>.text-11</code> - Changes the Font size to 44px.</li>
-              <li><code>.text-12</code> - Changes the Font size to 48px.</li>
-              <li><code>.text-13</code> - Changes the Font size to 52px.</li>
-              <li><code>.text-14</code> - Changes the Font size to 56px.</li>
-              <li><code>.text-15</code> - Changes the Font size to 60px.</li>
-              <li><code>.text-16</code> - Changes the Font size to 64px.</li>
-              <li><code>.text-17</code> - Changes the Font size to 72px.</li>
-              <li><code>.text-18</code> - Changes the Font size to 80px.</li>
-              <li><code>.text-19</code> - Changes the Font size to 84px.</li>
-              <li><code>.text-20</code> - Changes the Font size to 92px.</li>
-            </ul>
-            <h5>Font Weight:</h5>
-            <ul>
-              <li><code>.font-weight-100</code> - For font weight of 100.</li>
-              <li><code>.font-weight-200</code> - For font weight of 200.</li>
-              <li><code>.font-weight-300</code> - For font weight of 300.</li>
-              <li><code>.font-weight-400</code> - For font weight of 400.</li>
-              <li><code>.font-weight-500</code> - For font weight of 500.</li>
-              <li><code>.font-weight-600</code> - For font weight of 600.</li>
-              <li><code>.font-weight-700</code> - For font weight of 700.</li>
-              <li><code>.font-weight-800</code> - For font weight of 800.</li>
-              <li><code>.font-weight-900</code> - For font weight of 900.</li>
-            </ul>
-            <h5>Background Color:</h5>
-            <ul>
-              <li><code>.bg-transparent</code> - For background color of transparent</li>
-              <li><code>.bg-light</code> - For background color of light gray</li>
-              <li><code>.bg-light-1</code> - For background color of more light gray</li>
-              <li><code>.bg-light-2</code> - For background color of more light gray</li>
-              <li><code>.bg-light-3</code> - For background color of more light gray</li>
-              <li><code>.bg-light-4</code> - For background color of more light gray</li>
-              <li><code>.bg-dark</code> - For background color of dark</li>
-              <li><code>.bg-dark-1</code> - For background color of dark gray</li>
-              <li><code>.bg-dark-2</code> - For background color of more dark gray</li>
-              <li><code>.bg-dark-3</code> - For background color of more dark gray</li>
-              <li><code>.bg-dark-4</code> - For background color of more dark gray</li>
-            </ul>
-            <h5>Box Shadow</h5>
-            <ul>
-              <li><code>.shadow-none</code> - For No shadow to elements with box-shadow utilities.</li>
-              <li><code>.shadow-sm</code> - For Small shadow to elements with box-shadow utilities.</li>
-              <li><code>.shadow</code> - For Regular shadow to elements with box-shadow utilities.</li>
-              <li><code>.shadow-md</code> - For medium light shadows to elements with box-shadow utilities.</li>
-              <li><code>.shadow-lg</code> - For Larger shadows to elements with box-shadow utilities.</li>
-            </ul>
-            <h5>Opacity</h5>
-            <ul>
-              <li><code>.opacity-1</code> - For 10% opacity.</li>
-              <li><code>.opacity-2</code> - For 20% opacity.</li>
-              <li><code>.opacity-3</code> - For 30% opacity.</li>
-              <li><code>.opacity-4</code> - For 40% opacity.</li>
-              <li><code>.opacity-5</code> - For 50% opacity.</li>
-              <li><code>.opacity-6</code> - For 60% opacity.</li>
-              <li><code>.opacity-7</code> - For 70% opacity.</li>
-              <li><code>.opacity-8</code> - For 80% opacity.</li>
-              <li><code>.opacity-9</code> - For 90% opacity.</li>
-            </ul>
-            <h5>Border Radius</h5>
-            <ul>
-              <li><code>.rounded-top-0</code> - No Border Radius for top.</li>
-              <li><code>.rounded-bottom-0</code> - No Border Radius for bottom.</li>
-              <li><code>.rounded-left-0</code> - No Border Radius for left.</li>
-              <li><code>.rounded-right-0</code> - No Border Radius for right.</li>
-            </ul>
-            <h5>Borders, Sizing, Spacing (margin & padding) and also much more....</h5>
-            <div class="alert alert-info">You can refer for use other default bootstrap helper classes here - <a href="https://getbootstrap.com/docs/4.4/utilities/">https://getbootstrap.com/docs/4.4/utilities/</a></div>
-          </section>
-        
-        
-		<hr class="divider">
-		
-		<!-- FAQ
-		============================ -->
-		<section id="idocs_faq">
-          <h2>FAQ</h2>
-          <p class="text-4">A FAQ is a list of frequently asked questions (FAQs) and answers on a particular topic.</p>
-          
-		  <div class="row">
-          <div class="col-lg-12">
-            <div class="accordion accordion-alterate arrow-right" id="popularTopics">
-              <div class="card">
-                <div class="card-header" id="heading1">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
-                </div>
-                <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
-                </div>
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_switch">
+              <h3>4.5 Z-Switch & bed chain</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 8mm</td>
+                      <td>1</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M2 10mm</td>
+                      <td>2</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M3 40mm</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 nut</td>
+                      <td>3</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Microswitch</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Chain mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Endstop mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="card">
-                <div class="card-header" id="heading2">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
-                </div>
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                  <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading3">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end products?</a> </h5>
-                </div>
-                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                  <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading4">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">I'm not sure if my use is covered. What should I do?</a> </h5>
-                </div>
-                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
-                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading5">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">What is a single application?</a> </h5>
-                </div>
-                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
-                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="heading6">
-                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">Am I allowed to modify the item that I purchased?</a> </h5>
-                </div>
-                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
-                  <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Ad vegan excepteur butcher vice lomo. </div>
-                </div>
-              </div>
-            </div>
+              <br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_overview.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the printed chain mount to the bed frame using 2x10mm M3 screws (Vz-2235) or 4x6mm M3 (Vz-330). Then mount the cable chain using 10mm M3 
+              screws and nuts like shown below.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_mounted.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the microswitch to the printed adapter using M2 screws. Then mount the assembly to the top rod holder using the 8mm M3. Finally 
+              screw in the 50mm M3 screw and nut like shown below. After setting the correct Z-height using the adjustment screw use the M3 nut to 
+              lock the screw in place in order to make sure the screw doesn't drift off position.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_endstop_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_endstop_mounted.PNG" alt="">
+                </a>
+              </p>
+
+            </section>
           </div>
+          
         </div>
-          
-        </section>
-        
-		<hr class="divider">
-        
-        <!-- Source & Credits
-		============================ -->
-        <section id="idocs_source_credits">
-          <h2>Source & Credits</h2>
-          <h4>Images:</h4>
-          <ul>
-            <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a></li>
-          </ul>
-		  <h4>Fonts:</h4>
-          <ul>
-            <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
-          </ul>
-          <h4>Scripts:</h4>
-          <ul>
-            <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
-            <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
-			<li>Highlight Js - <a target="_blank" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
-			<li>jQuery easing - <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
-            <li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
-          </ul>
-        </section>
-        
-		<hr class="divider">
-		
-		<!-- Support
-		============================ -->
-        <section id="idocs_support">
-          <h2>Support</h2>
-          <p>If this documentation doesn't answer your questions, So, Please send us Email via <a class="btn btn-primary" target="_blank" href="https://themeforest.net/user/harnishdesign#contact">Item Support Page</a></p>
-		  <p> We are located in GMT +5:30 time zone and we answer all questions within 12-24 hours in weekdays. In some rare cases the waiting time can be to 48 hours. (except holiday seasons which might take longer).</p>
-          <div class="alert alert-warning mb-4"><span class="badge badge-danger text-uppercase">Note:</span> While we aim to provide the best support possible, please keep in mind that it only extends to verified buyers and only to issues related to our template like bugs and errors. Custom modifications or third party module implementations are not included.</div>
-		  <h4>Don’t forget to Rate this template
-			<i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i>
-		  </h4>
-		  <div class="alert alert-success">
-            Please Add your Review (Opinion) for Our template. It would be a great support for us.<br>
-            Go to your <strong>Themeforest Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate & Review for our template.<br>
-			Thank You.
-          </div>
-        </section>
-		
-		<hr class="divider">
-		
-		<!-- More Templates
-		============================ -->
-        <section id="idocs_templates">
-          <h2>More Templates</h2>
-          <p class="lead">Checkout Our Below Premium Templates</p>
-		  
-		  <div class="row">
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/28476751?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/simone.jpg" alt="">
-			<h6 class="pt-2">Simone - Personal Portfolio Template</h6>
-			</a>
-		  </div>
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/26454458?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/kenil.jpg" alt="">
-			<h6 class="pt-2">Kenil - Responsive Bootstrap 4 One Page Portfolio Template</h6>
-			</a>
-		  </div>
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/26313677?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/doon.jpg" alt="">
-			<h6 class="pt-2">Doon - One Page Parallax HTML Template</h6>
-			</a>
-		  </div>
-		  
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/27172933?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/domainx.jpg" alt="">
-			<h6 class="pt-2">DomainX- Domain for Sale HTML Template</h6>
-			</a>
-		  </div>
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/28848609?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/oxyy.jpg" alt="">
-			<h6 class="pt-2">Oxyy - Login and Register Form HTML Templates</h6>
-			</a>
-		  </div>
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/27034971?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/koice.jpg" alt="">
-			<h6 class="pt-2">Koice - Invoice HTML Template</h6>
-			</a>
-		  </div>
-		  
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/24017808?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/payyed.jpg" alt="">
-			<h6 class="pt-2">Payyed - Money Transfer and Online Payments HTML Template</h6>
-			</a>
-		  </div>
-		  <div class="col-4 my-3 text-center">
-			<a target="_blank" href="https://themeforest.net/item/x/22375065?ref=HarnishDesign"><img class="img-fluid border" src="assets/images/templates/quickai.jpg" alt="">
-			<h6 class="pt-2">Quickai - Recharge & Bill Payment, Booking HTML5 Template</h6>
-			</a>
-		  </div>
-		  </div>
-		  
-		  <p class="text-center"><a class="btn btn-lg btn-primary my-4" target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Our Portfolio</a></p>
-          
-        </section>
-		
-		<hr class="divider">
-		
-        <!-- Changelog
-		============================ -->
-		
-        <section id="idocs_changelog">
-          <h2>Changelog</h2>
-          <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
-		  <p class="alert alert-info mb-5"> For Future Updates Follow Us <a target="_blank" href="http://themeforest.net/user/harnishdesign?ref=HarnishDesign">@themeforest</a> / <a target="_blank" href="http://facebook.com/harnishdesign">@facebook</a> / <a target="_blank" href="http://twitter.com/harnishdesign">@twitter</a> / <a target="_blank" href="https://dribbble.com/harnishdesign">@Dribbble</a></p>
-          
-		  <h3 id="v1-1">Version 1.1 <small class="text-muted">(12 Oct, 2020)</small></h3>
-          <ul class="changelog">
-            <li><span class="badge badge-success">Added</span> Your information here for added new feature</li>
-            <li><span class="badge badge-danger">Fixed</span> Some minor bugs for browser compatibility</li>
-			<li><span class="badge badge-danger">Fixed</span> Some minor bugs for responsive</li>
-            <li><span class="badge badge-info">Updated</span> FontAwesome to Latest Version</li>
-			<li><span class="badge badge-info">Updated</span> Bootstrap to Latest Version</li>
-			<li><span class="badge badge-info">Updated</span> Improvements in CSS and JS</li>
-          </ul>
-		  
-		  <hr class="divider">
-		  
-          <h3 id="v1-0">Version 1.0 <small class="text-muted">(8 April, 2020)</small></h3>
-          <p>Initial Release</p>
-        </section>        
-        
       </div>
+      <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+          <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+            <li><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p class="text-center">Copyright &copy; 2023 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">VZBot</a>. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
-	
-  </div>
-  <!-- Content end --> 
-  
-  <!-- Footer
-  ============================ -->
-  <footer id="footer" class="section bg-dark footer-text-light">
-    <div class="container">
-      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
-        <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-        <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
-      </ul>
-      <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
-	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
-    </div>
-  </footer>
-  <!-- Footer end -->
-  
-</div>
-<!-- Document Wrapper end --> 
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
 
-<!-- Back To Top --> 
-<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
-
-<!-- JavaScript
-============================ -->
-<script src="assets/vendor/jquery/jquery.min.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<!-- Highlight JS -->
-<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
-<!-- Easing --> 
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-<!-- Magnific Popup --> 
-<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
-<!-- Custom Script -->
-<script src="assets/js/theme.js"></script>
-</body>
+    <script src="../../../assets/vendor/jquery/jquery.min.js"></script> 
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="../../../assets/vendor/highlight.js/highlight.min.js"></script> 
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+    <script src="../../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="../../../assets/js/theme.js"></script>
+  </body>
 </html>
