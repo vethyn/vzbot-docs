@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="../../../assets/images/favicon.png" rel="icon" />
+    <title>Documentation | VZBot 235</title>
+    <meta name="description" content="Build guide for VZBot 235 Alu version">
+    <meta name="author" content="harnishdesign.net">
+
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/highlight.js/styles/github.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/stylesheet.css" />
+  </head>
+  <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End --> 
+
+    <div id="main-wrapper"> 
+      <header id="header" class="sticky-top"> 
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+          <div class="container-fluid">
+            <!-- Sidebar Toggler -->
+            <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button">
+              <span></span>
+              <span class="w-75"></span>
+              <span class="w-50"></span>
+            </button>
+            <a class="logo ml-md-3" href="../../../index.html" title="VZBot 235 Alu"> 
+              <img src="../../../assets/images/logo.png" alt="VZBot" width="50" height="50"/> 
+            </a> 
+            <span class="text-2 ml-2">VZBot 235 - Full Alu Guide</span> 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+              <li class="social-icons-discord"><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+              <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-icons-github"><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="Github"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="content" role="main">
+
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#vzbot_start" onclick="window.open('../shared/getting_started.html', '_self')">0. Getting started</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_frame" onclick="window.open('../shared/frame.html', '_self')">1. Frame</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly" onclick="window.open('bed_assembly.html', '_self')">3. Bed - Assembly</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly">4. Z - Assembly - Part 2</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_overview">4.1 Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_parts">4.2 Parts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_top_rods">4.3 Top rod mounts</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_single_z_motor">4.4 Single z motor</a></li>
+              <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly_switch">4.5 Z-Switch & bed chain</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor" onclick="window.open('front_motor_mount.html', '_self')">5. Front motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('gantry.html', '_self')">7. Gantry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('printhead.html', '_self')">8. Printhead</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1">9. Panels - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_fume">10. Fume extractor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_electronics">11. Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_firmware">12. Firmware</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_checks">13. Checks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_2">14. Panels - Part 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_trim_pieces">15. Trim pieces</a></li>
+        </ul>
+      </div>
+      
+      <div class="idocs-content">
+          <div class="container" id="vzbot_z2_assembly">
+            <section id="vzbot_z2_assembly">
+              <h2>4. Z - Assembly - Part 2</h2>
+            </section>
+
+            <section id="vzbot_bed_assembly_overview">
+              <h3>4.1 Overview</h3>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_overview.PNG" alt="">
+                </a>
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_parts">
+              <h3>4.2 Parts</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 20mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 8mm</td>
+                      <td>1</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>10</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 nut</td>
+                      <td>3</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M2 10mm</td>
+                      <td>2</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>Microswitch</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 20 teeth</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>NEMA 17 stepper</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Chain mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Endstop mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_top_rods">
+              <h3>4.3 Top rod mounts</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 20mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <b>Important: When mounting the top rod's make sure the top rod with the extra hole for the z switch is in the back</b> <br><br>
+              Mount the 10mm M4 screws and t-nuts to all top rod mounts and loosely turn in the 20mm M4 screws in the clamping mechanism. <br>
+              Mount all top rod mounts to the rod first, finally tighten the rod holders to the frame with the pre-inserted M4 hardware.
+              <br><br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_rod.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_rod.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              After installing check the movement of the bed assembly by turning the leadscrews. This should operate smoothly. 
+              If not, place the bed assembly in the top most position, untighten all top rod holders and retighten to align the rods.
+            </section>
+
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_single_z_motor">
+              <h3>4.4 Single z motor</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>6</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M4 10mm</td>
+                      <td>2</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>GT2 20 teeth</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>NEMA 17 stepper</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_overview.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the bracket shown below to the frame using the 10mm M4 screws and T-nuts. Make sure it is 
+              nicely centered in the middle of the frame.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket.PNG" alt="">
+                </a>
+              </p>
+              <br><br>
+              Mount the stepper motor to the top bracket using the 10mm M3 screws. Attach the motor pulley like 
+              shown below.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket2.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_bracket2.PNG" alt="">
+                </a>
+              </p>
+              <br><br>
+              Mount the previous assembly to the bracket on the frame using 10mm M3 screws.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_motor_mounted.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              With the motor in the furthest position, loop the belt around the motor pulley and tighten the belt. 
+              Be sure to check if the belt is horizontally parallel to the frame for smoothest operation.
+            </section>
+            
+            <hr class="divider">
+
+            <section id="vzbot_z2_assembly_switch">
+              <h3>4.5 Z-Switch & bed chain</h3>
+              <div class="responsive-table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Material</th>
+                      <th>Quantity</th>
+                      <th>Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>M3 10mm</td>
+                      <td>4</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 8mm</td>
+                      <td>1</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M2 10mm</td>
+                      <td>2</td>
+                      <td>For microswitch</td>
+                    </tr>
+                    <tr>
+                      <td>M3 40mm</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>M3 nut</td>
+                      <td>3</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Microswitch</td>
+                      <td>1</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Chain mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                    <tr>
+                      <td>Endstop mount ( printed )</td>
+                      <td>1</td>
+                      <td>link</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_overview.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_overview.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the printed chain mount to the bed frame using 2x10mm M3 screws (Vz-2235) or 4x6mm M3 (Vz-330). Then mount the cable chain using 10mm M3 
+              screws and nuts like shown below.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_switch_mounted.PNG" alt="">
+                </a>
+              </p>
+              <br>
+              Mount the microswitch to the printed adapter using M2 screws. Then mount the assembly to the top rod holder using the 8mm M3. Finally 
+              screw in the 50mm M3 screw and nut like shown below. After setting the correct Z-height using the adjustment screw use the M3 nut to 
+              lock the screw in place in order to make sure the screw doesn't drift off position.
+              <br><br>
+              <p>
+                <a class="popup-img center" href="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_endstop_mounted.PNG">
+                  <img class="img-fluid border center" src="../../../assets/images/full/235/alu/z_assembly_part_2/z_assembly_part2_endstop_mounted.PNG" alt="">
+                </a>
+              </p>
+
+            </section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+          <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+            <li><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p class="text-center">Copyright &copy; 2023 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">VZBot</a>. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+    <script src="../../../assets/vendor/jquery/jquery.min.js"></script> 
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="../../../assets/vendor/highlight.js/highlight.min.js"></script> 
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+    <script src="../../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="../../../assets/js/theme.js"></script>
+  </body>
+</html>
