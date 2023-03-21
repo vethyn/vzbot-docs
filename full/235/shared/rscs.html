@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="../../../assets/images/favicon.png" rel="icon" />
+    <title>Documentation | VZBot 235</title>
+    <meta name="description" content="Build guide for VZBot 235 Alu version">
+    <meta name="author" content="harnishdesign.net">
+
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/highlight.js/styles/github.css" />
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/stylesheet.css" />
+  </head>
+  <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End --> 
+
+    <div id="main-wrapper"> 
+      <header id="header" class="sticky-top"> 
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+          <div class="container-fluid">
+            <!-- Sidebar Toggler -->
+            <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button">
+              <span></span>
+              <span class="w-75"></span>
+              <span class="w-50"></span>
+            </button>
+            <a class="logo ml-md-3" href="../../../index.html" title="VZBot 235 Alu"> 
+              <img src="../../../assets/images/logo.png" alt="VZBot" width="50" height="50"/> 
+            </a> 
+            <span class="text-2 ml-2">VZBot 235</span> 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+              <li class="social-icons-discord"><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+              <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="social-icons-github"><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="Github"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="content" role="main">
+
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#vzbot_start" onclick="window.open('../shared/getting_started.html', '_self')">0. Getting started</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_frame" onclick="window.open('../shared/frame.html', '_self')">1. Frame</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_1.html', '_self')">2. Z - Assembly - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_bed_assembly" onclick="window.open('bed_assembly.html', '_self')">3. Bed - Assembly</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_z2_assembly" onclick="window.open('z_assembly_part_2.html', '_self')">4. Z - Assembly - Part 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_front_motor" onclick="window.open('front_motor_mount.html', '_self')">5. Front motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount_awd.html', '_self')">6. Rear motor mounts ( AWD )</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rear_motor" onclick="window.open('../alu/back_motor_mount.html', '_self')">6. Rear motor mounts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_gantry" onclick="window.open('../alu/gantry.html', '_self')">7. Gantry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_printhead" onclick="window.open('../alu/printhead.html', '_self')">8. Printhead</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_1" onclick="window.open('panels_part_1.html', '_self')">9. Panels - Part 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_fume" onclick="window.open('fume.html', '_self')">10. Fume extractor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_electronics" onclick="window.open('electronics.html', '_self')">11. Electronics</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_rscs">12. RSCS</a>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#vzbot_rscs_overview">12.1 Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_rscs_parts">12.2 Parts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_rscs_assemble">12.3 Assemble</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vzbot_rscs_panel">12.4 Mount to panel</a></li>
+              </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#vzbot_panels_part_2" onclick="window.open('panels_part_2.html', '_self')">13. Panels - Part 2</a></li>
+        </ul>
+      </div>
+      
+      <div class="idocs-content">
+        <div class="container" id="vzbot_rscs">   
+          <section id="vzbot_rscs">
+            <h2>12. RSCSC</h2>
+          </section>
+          <section id="vzbot_rscs_overview">
+            <h3>12.1 Overview</h3>
+            <p>
+              <a class="popup-img center" href="../../../assets/images/full/235/shared/fume/overview.png">
+                <img class="img-fluid border center" src="../../../assets/images/full/235/shared/fume/overview.png" alt="">
+              </a>
+            </p>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_rscs_parts">
+            <h3>12.2 Parts</h3>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_rscs_assemble">
+            <h3>12.3 Assemble</h3>
+          </section>
+
+          <hr class="divider">
+
+          <section id="vzbot_rscs_panel">
+            <h3>12.4 Mount to panel</h3>
+          </section>
+        </div>
+      </div>
+      <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+          <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+            <li><a data-toggle="tooltip" href="https://discord.gg/qmMeD6Vt3W" target="_blank" title="" data-original-title="Discord"><i class="fab fa-discord"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://www.facebook.com/groups/4098868770205560/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a data-toggle="tooltip" href="https://github.com/VzBoT3D" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+          </ul>
+          <p class="text-center">Copyright &copy; 2023 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">VZBot</a>. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+    <script src="../../../assets/vendor/jquery/jquery.min.js"></script> 
+    <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="../../../assets/vendor/highlight.js/highlight.min.js"></script> 
+    <script src="../../../assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+    <script src="../../../assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="../../../assets/js/theme.js"></script>
+  </body>
+</html>
